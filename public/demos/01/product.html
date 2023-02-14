@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keyword" content="">
+
+<base href="">
+
+<meta name="author" content="www.ozchamp.com">
+<meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>DEMO - Product</title>
+<!-- CSS & Js -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/9aaa47093c.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+<!--swiper-->
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- Custom Css -->
+<style type="text/css">
+    :root {
+        --swiper-navigation-color: white !important;
+        --swiper-theme-color: white !important;	
+    }
+    .banner { height: 70vh;}
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+        <header class="header bg-white">
+	        <div class="container relative mx-auto flex justify-between items-center px-5 py-5 w-full h-full" x-data="{ showMenu: false }">
+	            <div class="logo grow order-2 sm:order-1">
+	                <a href="/">
+	                    <img src="img/logo.svg" class="mx-auto w-16 md:w-20 lg:w-22">                   
+	                </a>
+	            </div>
+	            <div class="sm:order-2 justify-center items-start md:items-center hidden w-full h-auto p-4 md:p-0 md:relative md:flex" :class="{'flex absolute z-50 left-0 top-20 bg-white shadow-xl shadow-gray-500/20': showMenu, 'hidden': !showMenu }">
+	                <nav class="flex flex-col w-full justify-center items-stretch sm:items-center md:flex-row">
+	                    <a class="px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="index.html">首頁</a>
+	                    <a class="px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="about.html">關於我們</a>
+	                    <a class="px-5 py-3 font-bold text-indigo-600 hover:text-indigo-600" href="product.html">產品介紹</a>
+	                    <a class="px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="contact.html">聯絡我們</a>
+	                </nav>
+	            </div>
+	            <div class="relative order-3 sm:order-2" x-data="{ showDropdown: false }">
+	                <div class="block mr-0 sm:mr-2" @click="showDropdown = !showDropdown">
+	                    <span class="flex items-center justify-center w-12 h-12 bg-gray-200 text-gray-900 rounded-full hover:bg-indigo-600 hover:text-white cursor-pointer"><i class="fas fa-search"></i></span>
+	                </div>
+	                <div class="absolute z-50 top-16 right-0 bg-white shadow-xl shadow-gray-500/20 rounded-full overflow-hidden border border-gray-200" x-show="showDropdown">
+	                    <form class="flex px-2 py-2">
+	                        <input class="px-3 py-1 rounded-full focus:outline-none" type="text">
+	                        <button class="flex items-center justify-center w-12 h-12 bg-indigo-600 text-white rounded-full" type="submit"><i class="fas fa-search"></i></button>
+	                    </form>
+	                </div>
+	            </div>
+	            <div @click="showMenu = !showMenu" class="block ml-0 sm:ml-2 bg-gray-200 text-gray-900 rounded-full hover:bg-indigo-600 hover:text-white cursor-pointer md:hidden order-1 sm:order-auto">
+	                <span class="flex items-center justify-center w-12 h-12"><i class="fas fa-bars"></i></span>
+	            </div>
+	        </div>
+	    </header>
+
+        <section class="page-banner bg-center bg-cover bg-gray-200" style="background-image: url('img/slider-2.jpg');">
+            <div class="py-12 inline-flex flex-col justify-center items-center h-full w-full bg-black/60 text-center">
+                <h2 class="lg:w-1/2 uppercase text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">
+                    JBL Quantum.
+                </h2>
+                <div class="breadcrumb mt-6 text-white text-sm">
+                    <a href="index.html">首頁</a>
+                    <span class="px-4">/</span>
+                    <a href="index.html">產品介紹</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mx-auto max-w-7xl">		
+            <div class="relative w-full py-16 mx-auto">
+                <div class="flex flex-col md:flex-row">
+                    <aside class="w-full md:w-1/3 lg:w-1/4">
+                        <div class="px-6 py-10 bg-white md:mr-6 border border-gray-300 md:sticky md:top-0">
+                            <h3 class="text-2xl font-extrabold leading-none text-gray-900">產品介紹</h3>
+                            <ul class="mt-8 divide divide-y">
+                                <li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">無線<i class="fas fa-angle-right text-gray-400"></i></a></li>
+                                <li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">耳機<i class="fas fa-angle-down text-gray-400"></i></a>
+                                    <ul class="list-disc list-outside mb-6 pl-5">
+                                        <li><a href="#">頭戴式 & 耳掛式耳機</a></li>
+                                        <li><a href="#">入耳式耳機</a></li>
+                                        <li><a href="#">無線耳機</a></li>
+                                        <li><a href="#">運動耳機</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="py-3 font-bold text-indigo-600 flex justify-between items-center">家庭音響<i class="fas fa-angle-right text-gray-400"></i></a>
+                                    <ul class="list-disc list-outside mb-6 pl-5">
+                                        <li><a href="#" class="text-indigo-600">家用音響</a></li>
+                                        <li><a href="#">條形音響</a></li>
+                                        <li><a href="#">音響</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">JBL Quantum 系列<i class="fas fa-angle-right text-gray-400"></i></a></li>
+                                <li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">車用/航海<i class="fas fa-angle-right text-gray-400"></i></a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <div class="w-full md:w-2/3 lg:w-3/4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="product-detail.html" class="block p-4 bg-slate-100 overflow-hidden">
+                                <img class="w-full h-auto transition duration-200 ease-out transform hover:scale-110" src="img/lineup-quantum-100.webp">
+                            </a>>
+                            <div class="relative flex flex-col items-stretch p-6">
+                                <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="product-detail.html">JBL Quantum 100</a></h2>
+                                <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="product-detail.html" class="block p-4 bg-slate-100 overflow-hidden">
+                                <img class="w-full h-auto transition duration-200 ease-out transform hover:scale-110" src="img/lineup-quantum-200.webp">
+                            </a>
+                            <div class="relative flex flex-col items-stretch p-6">
+                                <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="product-detail.html">JBL Quantum 200</a></h2>
+                                <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="product-detail.html" class="block p-4 bg-slate-100 overflow-hidden">
+                                <img class="w-full h-auto transition duration-200 ease-out transform hover:scale-110" src="img/lineup-quantum-300.webp">
+                            </a>
+                            <div class="relative flex flex-col items-stretch p-6">
+                                <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="product-detail.html">JBL Quantum 300</a></h2>
+                                <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="product-detail.html" class="block p-4 bg-slate-100 overflow-hidden">
+                                <img class="w-full h-auto transition duration-200 ease-out transform hover:scale-110" src="img/lineup-quantum-400.webp">
+                            </a>
+                            <div class="relative flex flex-col items-stretch p-6">
+                                <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="product-detail.html">JBL Quantum 400</a></h2>
+                                <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="product-detail.html" class="block p-4 bg-slate-100 overflow-hidden">
+                                <img class="w-full h-auto transition duration-200 ease-out transform hover:scale-110" src="img/lineup-quantum-600.webp">
+                            </a>
+                            <div class="relative flex flex-col items-stretch p-6">
+                                <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="product-detail.html">JBL Quantum 600</a></h2>
+                                <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="product-detail.html" class="block p-4 bg-slate-100 overflow-hidden">
+                                <img class="w-full h-auto transition duration-200 ease-out transform hover:scale-110" src="img/lineup-quantum-800.webp">
+                            </a>
+                            <div class="relative flex flex-col items-stretch p-6">
+                                <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="product-detail.html">JBL Quantum 800</a></h2>
+                                <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="product-detail.html" class="block p-4 bg-slate-100 overflow-hidden">
+                                <img class="w-full h-auto transition duration-200 ease-out transform hover:scale-110" src="img/lineup-quantum-one.webp">
+                            </a>
+                            <div class="relative flex flex-col items-stretch p-6">
+                                <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="product-detail.html">JBL Quantum ONE</a></h2>
+                                <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="product-detail.html" class="block p-4 bg-slate-100 overflow-hidden">
+                                <img class="w-full h-auto transition duration-200 ease-out transform hover:scale-110" src="img/lineup-quantum-speakers.webp">
+                            </a>
+                            <div class="relative flex flex-col items-stretch p-6">
+                                <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="product-detail.html">JBL Quantum DUO</a></h2>
+                                <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </section>
+
+        		
+        <footer class="footer bg-slate-100">
+            <div class="container lg:max-w-7xl px-5 py-5 sm:py-10 mx-auto flex md:items-center lg:items-center md:flex-row md:flex-wrap lg:flex-nowrap flex-wrap flex-col">
+                <div class="w-full md:w-4/12 w-full px-4">
+                    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                        <img src="img/logo.svg" class="w-12 md:w-14 lg:w-20"> 
+                        <div class="ml-5">
+                            <h3 class="text-xl font-bold text-2xl">元伸科技(股)公司</h3>
+                            <span class="text-sm font-bold">OZCHAMP Technology Co., LTD.</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="w-full md:w-4/12 w-full px-4">
+                    <ul class="mb-6 sm:mb-0">
+                        <li class=""><a class="block leading-loose text-sm text-gray-600 hover:text-gray-800"><i class="fas fa-phone w-4 mr-2 text-center text-indigo-600"></i>+886-3-366-1000</a></li>
+                        <li><a class="block leading-loose text-sm text-gray-600 hover:text-gray-800"><i class="fas fa-fax w-4 mr-2 text-center text-indigo-600"></i>+886-3-366-9292</a></li>
+                        <li><a class="block leading-loose text-sm text-gray-600 hover:text-gray-800"><i class="fas fa-envelope w-4 mr-2 text-center text-indigo-600"></i>services@ozchamp.net</a></li>
+                        <li><a class="block leading-loose text-sm text-gray-600 hover:text-gray-800"><i class="fas fa-map-marker w-4 mr-2 text-center text-indigo-600"></i>台灣330桃園市介壽路288號7F</a></li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-4/12 w-full px-4">
+                    <div class="bg-white max-h-28 md:h-30 border rounded overflow-hidden">
+                        <iframe class="w-full h-full" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.533754615572!2d121.30508151474596!3d24.981972983996815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f1fc1a1a51d%3A0x50e12aa85825912a!2z57ay6aCB6Kit6KiIV2ViIERlc2lnbiDlhYPkvLjnp5HmioA!5e0!3m2!1szh-TW!2stw!4v1539073058119"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t">
+                <div class="container mx-auto py-4 px-5">
+                    <p class="text-gray-500 text-xs text-center">
+                        copyright &copy; 2002~2020 元伸科技(股)公司. All rights reserved. Designed by <a href="https://www.ozchamp.com" class="text-gray-600 ml-1" target="_blank">OZCHAMP</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+		const swiper = new Swiper('.swiper', {
+			effect: "fade",
+			loop: false,
+			centeredSlides: true,
+				autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+</body>
+</html>

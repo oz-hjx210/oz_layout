@@ -1,0 +1,843 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keyword" content="">
+
+<base href="">
+
+<meta name="author" content="www.ozchamp.com">
+<meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>區塊總覽-產品</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+<!--CSS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<script src="https://kit.fontawesome.com/9aaa47093c.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+<style type="text/css">
+::-webkit-scrollbar { width: 6px; height: 6px; border-radius: 3px;}
+::-webkit-scrollbar-thumb { border-radius: 3px; background: #333; }
+::-webkit-scrollbar-thumb:hover { background: #ff6d34; }
+input[type="radio"] { width: 1.2rem; height: 1.2rem; background: white; vertical-align: middle; }
+label { display: inline-block; font-weight: bold; line-height: 1.2rem; cursor: pointer;}
+
+.tab-content { max-height: 0; transition: max-height .35s; }
+.tab input:checked ~ .tab-content { max-height: 100vh; }
+.tab label::before { display: inline-block; margin-right: 1rem; width: 1.5rem; height: 1.5rem; line-height: 1.5; font-size: 1.25rem; text-align: center; transition: all .35s; }
+.tab input[type=checkbox] + label::before { content: "+"; font-weight:bold; }
+.tab input[type=radio] + label::before { content: "+"; font-weight:bold; }
+.tab input[type=checkbox]:checked + label::before { content: "-"; }
+.tab input[type=radio]:checked + label::before { content: "-"; }
+</style>
+</head>
+
+<body class="bg-slate-300 p-4 sm:p-5 md:px-20 md:pt-12 md:pb-20">
+
+	<h3 class="text-2xl mb-6 font-black text-center">產品列表</h3>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="PL01">
+			<!--<input name="header-ele" type="radio" id="PL01">-->
+			PL 01
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">		
+    	<div class="relative w-full py-10 mx-auto">
+	        <h1 class="mb-1 text-center text-3xl font-extrabold leading-none text-gray-900 sm:mb-3">推薦商品</h1>
+	        <p class="text-center text-gray-500 text-sm">以製造服務業的理念，為客戶節能、環保概念新產品提供模組化零件的最佳解決方案！</p>
+	        <div class="flex flex-wrap sm:flex-nowrap h-full gap-10 mt-8 sm:mt-10">
+				<div class="flex flex-col items-start overflow-hidden shadow-sm rounded-xl md:w-1/3 lg:w-1/3 hover:text-indigo-600 bg-white">
+					<a href="#" class="block transition duration-200 ease-out transform hover:scale-110">
+						<img class="w-full shadow-sm h-auto" src="img/img-1.jpg">
+					</a>
+					<div class="relative flex flex-col items-start p-6 bg-white">
+						<div class="bg-indigo-400 absolute top-0 -mt-3 inline-flex items-center px-3 py-1.5 leading-none w-auto rounded-full text-xs font-medium uppercase text-white">
+							<span>categories A</span>
+						</div>
+						<h2 class="mt-6 text-base font-bold sm:text-lg md:text-xl"><a href="#">鋁擠型機械架構系統</a></h2>
+						<p class="mt-2 text-sm text-gray-500 leading-loose">應用範圍包括光電產業(光碟及平面顯示器等)、半導體產業、食品包裝、測試機、印刷機械設備、機械手臂和各種機台之外罩與安全圍籬等。</p>
+						<a href="#" class="mt-6 border-2 rounded-md font-bold bg-indigo-600 text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">查看詳情</a>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-start overflow-hidden shadow-sm rounded-xl md:w-1/3 lg:w-1/3 hover:text-indigo-600 bg-white">
+					<a href="#" class="block transition duration-200 ease-out transform hover:scale-110">
+						<img class="w-full shadow-sm h-auto" src="img/img-2.jpg">
+					</a>
+					<div class="relative flex flex-col items-start p-6 bg-white">
+						<div class="bg-red-400 absolute top-0 -mt-3 inline-flex items-center px-3 py-1.5 leading-none w-auto rounded-full text-xs font-medium uppercase text-white">
+							<span>categories B</span>
+						</div>
+						<h2 class="mt-6 text-base font-bold sm:text-lg md:text-xl"><a href="#">線性伺服滑台</a></h2>
+						<p class="mt-2 text-sm text-gray-500 leading-loose">滿足自動化設備及精密量測業者在設計與製造上的需求，可廣泛的使用在PC、PCB、LED、光電、半導體、點膠、包裝、生物科技...等產業設備。</p>
+						<a href="#" class="mt-6 border-2 rounded-md font-bold bg-indigo-600 text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">查看詳情</a>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-start overflow-hidden shadow-sm rounded-xl md:w-1/3 lg:w-1/3 hover:text-indigo-600 bg-white">
+					<a href="#" class="block transition duration-200 ease-out transform hover:scale-110">
+						<img class="w-full shadow-sm h-auto" src="img/img-3.jpg">
+					</a>
+					<div class="relative flex flex-col items-start p-6 bg-white">
+						<div class="bg-purple-500 absolute top-0 -mt-3 inline-flex items-center px-3 py-1.5 leading-none w-auto rounded-full text-xs font-medium uppercase text-white">
+							<span>categories C</span>
+						</div>
+						<h2 class="mt-6 text-base font-bold sm:text-lg md:text-xl"><a href="#">萬向滾珠</a></h2>
+						<p class="mt-2 text-sm text-gray-500 leading-loose">低成本、高品質的Unibear，適合360度的移動搬送，活用於各種生活產業，以零件的共通化實現各式各樣符合您需要的商品，讓您隨心所欲自在省力！</p>
+						<a href="#" class="mt-6 border-2 rounded-md font-bold bg-indigo-600 text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">查看詳情</a>
+					</div>
+				</div>
+	        </div>
+	    </div>	
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="PL02">
+			<!--<input name="header-ele" type="radio" id="PL02">-->
+			PL 02
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">		
+    	<div class="relative w-full py-10 mx-auto">
+	        <h1 class="mb-4 text-center text-3xl font-extrabold leading-none text-gray-900 lg:mb-6">JBL Quantum</h1>
+	        <div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
+				<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+					<a href="#" class="block p-6 w-full transition duration-200 ease-out transform hover:opacity-50">
+						<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-100.webp">
+					</a>
+					<div class="relative flex flex-col items-stretch px-6">
+						<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 100</a></h2>
+						<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						<div class="hidden mt-4 text-2xl font-extrabold text-orange-600 before:content-['NT$'] before:text-sm before:mr-2">2,080.00</div>
+						<div class="mt-4 text-md text-bold hover:text-orange-600 text-center border-t border-black">
+							<a href="#" class="block p-4"><i class="fas fa-comment mr-2"></i>加入詢價車</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+					<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+						<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-200.webp">
+					</a>
+					<div class="relative flex flex-col items-stretch px-6">
+						<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 200</a></h2>
+						<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						<div class="hidden mt-4 text-2xl font-extrabold text-orange-600 before:content-['NT$'] before:text-sm before:mr-2">2,780.00</div>
+						<div class="mt-4 text-md text-bold hover:text-orange-600 text-center border-t border-black">
+							<a href="#" class="block p-4"><i class="fas fa-comment mr-2"></i>加入詢價車</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+					<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+						<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-300.webp">
+					</a>
+					<div class="relative flex flex-col items-stretch px-6">
+						<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 300</a></h2>
+						<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						<div class="hidden mt-4 text-2xl font-extrabold text-orange-600 before:content-['NT$'] before:text-sm before:mr-2">3,380.00</div>
+						<div class="mt-4 text-md text-bold hover:text-orange-600 text-center border-t border-black">
+							<a href="#" class="block p-4"><i class="fas fa-comment mr-2"></i>加入詢價車</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+					<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+						<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-400.webp">
+					</a>
+					<div class="relative flex flex-col items-stretch px-6">
+						<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 400</a></h2>
+						<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						<div class="hidden mt-4 text-2xl font-extrabold text-orange-600 before:content-['NT$'] before:text-sm before:mr-2">4,680.00</div>
+						<div class="mt-4 text-md text-bold hover:text-orange-600 text-center border-t border-black">
+							<a href="#" class="block p-4"><i class="fas fa-comment mr-2"></i>加入詢價車</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+					<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+						<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-600.webp">
+					</a>
+					<div class="relative flex flex-col items-stretch px-6">
+						<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 600</a></h2>
+						<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						<div class="hidden mt-4 text-2xl font-extrabold text-orange-600 before:content-['NT$'] before:text-sm before:mr-2">7,680.00</div>
+						<div class="mt-4 text-md text-bold hover:text-orange-600 text-center border-t border-black">
+							<a href="#" class="block p-4"><i class="fas fa-comment mr-2"></i>加入詢價車</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+					<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+						<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-800.webp">
+					</a>
+					<div class="relative flex flex-col items-stretch px-6">
+						<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 800</a></h2>
+						<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						<div class="hidden mt-4 text-2xl font-extrabold text-orange-600 before:content-['NT$'] before:text-sm before:mr-2">9,990.00</div>
+						<div class="mt-4 text-md text-bold hover:text-orange-600 text-center border-t border-black">
+							<a href="#" class="block p-4"><i class="fas fa-comment mr-2"></i>加入詢價車</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+					<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+						<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-one.webp">
+					</a>
+					<div class="relative flex flex-col items-stretch px-6">
+						<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum ONE</a></h2>
+						<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						<div class="hidden mt-4 text-2xl font-extrabold text-orange-600 before:content-['NT$'] before:text-sm before:mr-2">11,880.00</div>
+						<div class="mt-4 text-md text-bold hover:text-orange-600 text-center border-t border-black">
+							<a href="#" class="block p-4"><i class="fas fa-comment mr-2"></i>加入詢價車</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+					<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+						<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-speakers.webp">
+					</a>
+					<div class="relative flex flex-col items-stretch px-6">
+						<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum DUO</a></h2>
+						<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						<div class="hidden mt-4 text-2xl font-extrabold text-orange-600 before:content-['NT$'] before:text-sm before:mr-2">無報價</div>
+						<div class="mt-4 text-md text-bold hover:text-orange-600 text-center border-t border-black">
+							<a href="#" class="block p-4"><i class="fas fa-comment mr-2"></i>加入詢價車</a>
+						</div>
+					</div>
+				</div>
+	        </div>
+	    </div>	
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="PL03">
+			<!--<input name="header-ele" type="radio" id="PL03">-->
+			PL 03
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">		
+    	<div class="relative w-full py-10 mx-auto">
+	        <h1 class="mb-4 text-center text-3xl font-extrabold leading-none text-gray-900 lg:mb-6">JBL Quantum</h1>
+			<div class="flex flex-col md:flex-row">
+				<aside class="w-full md:w-1/3 lg:w-1/4">
+					<div class="px-6 py-10 bg-white md:mr-6 border border-gray-300 md:sticky md:top-0">
+						<h3 class="text-2xl font-extrabold leading-none text-gray-900">產品介紹</h3>
+						<ul class="mt-8 divide divide-y">
+							<li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">無線<i class="fas fa-angle-right text-gray-400"></i></a></li>
+							<li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">耳機<i class="fas fa-angle-down text-gray-400"></i></a>
+								<ul class="list-disc list-outside mb-6 pl-5">
+									<li><a href="#">頭戴式 & 耳掛式耳機</a></li>
+									<li><a href="#">入耳式耳機</a></li>
+									<li><a href="#">無線耳機</a></li>
+									<li><a href="#">運動耳機</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="py-3 font-bold text-indigo-600 flex justify-between items-center">家庭音響<i class="fas fa-angle-right text-gray-400"></i></a>
+								<ul class="list-disc list-outside mb-6 pl-5">
+									<li><a href="#" class="text-indigo-600">家用音響</a></li>
+									<li><a href="#">條形音響</a></li>
+									<li><a href="#">音響</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">JBL Quantum 系列<i class="fas fa-angle-right text-gray-400"></i></a></li>
+							<li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">車用/航海<i class="fas fa-angle-right text-gray-400"></i></a></li>
+						</ul>
+					</div>
+				</aside>
+				<div class="w-full md:w-2/3 lg:w-3/4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+					<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 w-full transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-100.webp">
+						</a>
+						<div class="relative flex flex-col items-stretch p-6">
+							<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 100</a></h2>
+							<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-200.webp">
+						</a>
+						<div class="relative flex flex-col items-stretch p-6">
+							<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 200</a></h2>
+							<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-300.webp">
+						</a>
+						<div class="relative flex flex-col items-stretch p-6">
+							<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 300</a></h2>
+							<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-400.webp">
+						</a>
+						<div class="relative flex flex-col items-stretch p-6">
+							<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 400</a></h2>
+							<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-600.webp">
+						</a>
+						<div class="relative flex flex-col items-stretch p-6">
+							<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 600</a></h2>
+							<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-800.webp">
+						</a>
+						<div class="relative flex flex-col items-stretch p-6">
+							<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 800</a></h2>
+							<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-one.webp">
+						</a>
+						<div class="relative flex flex-col items-stretch p-6">
+							<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum ONE</a></h2>
+							<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						</div>
+					</div>
+
+					<div class="flex flex-col items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-speakers.webp">
+						</a>
+						<div class="relative flex flex-col items-stretch p-6">
+							<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum DUO</a></h2>
+							<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>	
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="PL04">
+			<!--<input name="header-ele" type="radio" id="PL04">-->
+			PL 04
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">		
+    	<div class="relative w-full py-10 mx-auto">
+	        <h1 class="mb-4 text-center text-3xl font-extrabold leading-none text-gray-900 lg:mb-6">JBL Quantum</h1>
+			<div class="flex flex-col md:flex-row">
+				<aside class="w-full md:pr-6 md:w-1/3 lg:w-1/4">
+					<div class="px-6 py-10 bg-white lg:mr-6 border border-gray-300 md:sticky md:top-0">
+						<h3 class="text-2xl font-extrabold leading-none text-gray-900">產品介紹</h3>
+						<ul class="mt-8 divide divide-y">
+							<li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">無線<i class="fas fa-angle-right text-gray-400"></i></a></li>
+							<li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">耳機<i class="fas fa-angle-down text-gray-400"></i></a>
+								<ul class="list-disc list-outside mb-6 pl-5">
+									<li><a href="#">頭戴式 & 耳掛式耳機</a></li>
+									<li><a href="#">入耳式耳機</a></li>
+									<li><a href="#">無線耳機</a></li>
+									<li><a href="#">運動耳機</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="py-3 font-bold text-indigo-600 flex justify-between items-center">家庭音響<i class="fas fa-angle-right text-gray-400"></i></a>
+								<ul class="list-disc list-outside mb-6 pl-5">
+									<li><a href="#" class="text-indigo-600">家用音響</a></li>
+									<li><a href="#">條形音響</a></li>
+									<li><a href="#">音響</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">JBL Quantum 系列<i class="fas fa-angle-right text-gray-400"></i></a></li>
+							<li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">車用/航海<i class="fas fa-angle-right text-gray-400"></i></a></li>
+						</ul>
+					</div>
+				</aside>
+				<div class="w-full md:w-2/3 lg:w-3/4 grid md:grid-cols-2 lg:grid-cols-1 gap-6">
+					<div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-100.webp">
+						</a>
+						<div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+							<div class="prod-name">
+								<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 100</a></h2>
+								<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+							</div>
+							<div class="prod-desc text-sm mt-6">
+								<p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+							</div>
+							<a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+						</div>
+					</div>
+
+					<div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-200.webp">
+						</a>
+						<div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+							<div class="prod-name">
+								<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 200</a></h2>
+								<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+							</div>
+							<div class="prod-desc text-sm mt-6">
+								<p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+							</div>
+							<a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+						</div>
+					</div>
+
+					<div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-300.webp">
+						</a>
+						<div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+							<div class="prod-name">
+								<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 300</a></h2>
+								<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+							</div>
+							<div class="prod-desc text-sm mt-6">
+								<p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+							</div>
+							<a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+						</div>
+					</div>
+
+					<div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-400.webp">
+						</a>
+						<div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+							<div class="prod-name">
+								<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 400</a></h2>
+								<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+							</div>
+							<div class="prod-desc text-sm mt-6">
+								<p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+							</div>
+							<a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+						</div>
+					</div>
+
+					<div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-600.webp">
+						</a>
+						<div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+							<div class="prod-name">
+								<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 600</a></h2>
+								<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+							</div>
+							<div class="prod-desc text-sm mt-6">
+								<p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+							</div>
+							<a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+						</div>
+					</div>
+
+					<div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-800.webp">
+						</a>
+						<div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+							<div class="prod-name">
+								<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 800</a></h2>
+								<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+							</div>
+							<div class="prod-desc text-sm mt-6">
+								<p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+							</div>
+							<a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+						</div>
+					</div>
+
+					<div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-one.webp">
+						</a>
+						<div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+							<div class="prod-name">
+								<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum ONE</a></h2>
+								<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+							</div>
+							<div class="prod-desc text-sm mt-6">
+								<p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+							</div>
+							<a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+						</div>
+					</div>
+
+					<div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white">
+						<a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+							<img class="w-full shadow-sm h-auto" src="img/lineup-quantum-speakers.webp">
+						</a>
+						<div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+							<div class="prod-name">
+								<h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum DUO</a></h2>
+								<div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+							</div>
+							<div class="prod-desc text-sm mt-6">
+								<p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+							</div>
+							<a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>	
+	</section>
+
+	<h3 class="text-2xl mt-6 mb-6 font-black text-center">產品詳情</h3>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="PD01">
+			<!--<input name="header-ele" type="radio" id="PD01">-->
+			PD 01
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">
+		<div class="container mx-auto mt-3 mb-12 px-4 py-4 md:px-8 md:py-4 bg-white shadow-2xl">
+			<div class="py-6">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="flex items-center space-x-2 text-gray-400 text-sm">
+						<a href="#" class="hover:underline hover:text-gray-600">首頁</a>
+						<span>
+							<i class="fa fa-angle-right leading-none text-gray-300"></i>
+						</span>
+						<a href="#" class="hover:underline hover:text-gray-600">商品目錄</a>
+						<span>
+							<i class="fa fa-angle-right leading-none text-gray-300"></i>
+						</span>
+						<span class="text-indigo-600">商品詳情</span>
+					</div>
+				</div>
+
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+					<div class="flex flex-col flex-wrap md:flex-row -mx-4">
+						<div class="w-full lg:flex-1 px-4">
+							<div id="default-carousel" class="relative mt-6 mb-6" data-carousel="static">
+						        <div class="overflow-hidden relative h-40 sm:h-80 rounded-3xl">
+						            <div class="hidden duration-700 ease-in-out bg-gradient-to-bl from-indigo-600 to-blue-500" data-carousel-item>
+						                <img src="img/img-7.jpg" class="block w-full h-auto object-cover">
+						            </div>
+						            <div class="hidden duration-700 ease-in-out bg-black" data-carousel-item>
+						                <img src="img/img-8.jpg" class="block w-full h-auto object-cover">
+						            </div>
+						            <div class="hidden duration-700 ease-in-out bg-gradient-to-bl from-indigo-600 to-blue-500" data-carousel-item>
+						                <img src="img/img-9.jpg" class="block w-full h-auto object-cover">
+						            </div>						            
+						            <div class="hidden duration-700 ease-in-out bg-gradient-to-bl from-indigo-600 to-blue-500" data-carousel-item>
+						                <img src="img/img-10.jpg" class="block w-full h-auto object-cover">
+						            </div>
+						        </div>
+						        <div class="flex justify-center mt-3 space-x-3">
+						            <button type="button" class="w-24 h-18 rounded-lg overflow-hidden" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0">
+						            	<img src="img/img-7.jpg" class="block w-full h-auto">
+						            </button>
+						            <button type="button" class="w-24 h-18 rounded-lg overflow-hidden" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1">
+						            	<img src="img/img-8.jpg" class="block w-full h-auto">
+						            </button>
+						            <button type="button" class="w-24 h-18 rounded-lg overflow-hidden" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2">
+						            	<img src="img/img-9.jpg" class="block w-full h-auto">
+						            </button>
+						            <button type="button" class="w-24 h-18 rounded-lg overflow-hidden" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3">
+						            	<img src="img/img-10.jpg" class="block w-full h-auto">
+						            </button>
+						        </div>
+						    </div>
+						</div>
+						<div class="w-full lg:flex-1 px-4">
+							<h2 class="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">JBL PARTYBOX ON THE GO 便攜式卡拉OK藍牙喇叭</h2>
+							<p class="hidden text-gray-500 text-sm">庫存<small>100</small></p>
+
+							<div class="sm:hidden flex items-center space-x-4 my-4">
+								<div>
+									<div class="rounded-lg bg-gray-100 flex py-2 px-3">
+										<span class="text-indigo-400 mr-1 mt-1">NT$</span>
+										<span class="font-bold text-indigo-600 text-3xl">2,500</span>
+									</div>
+								</div>
+								<div class="flex-1">
+									<p class="text-green-500 text-xl font-semibold">節省 12%</p>
+									<p class="text-gray-400 text-sm">包含所有稅費。</p>
+								</div>
+							</div>
+
+							<p class="my-8 text-gray-500">使用隨附的 JBL 無線麥克風，您即可獨唱或對唱，或是插入您專屬的麥克風和樂器，展現您的音樂才華。藍牙、USB、AUX 和 TWS (True Wireless Stereo) 連線，提供更多方式讓您存取最喜愛的歌唱應用程式和歌曲，而 100 瓦的強大 JBL 經典音效和令人目眩神迷的燈光秀能讓您享受明星般的體驗。</p>
+							<p class="my-8 text-gray-500">使用隨附的 JBL 無線麥克風，您即可獨唱或對唱，或是插入您專屬的麥克風和樂器，展現您的音樂才華。藍牙、USB、AUX 和 TWS (True Wireless Stereo) 連線，提供更多方式讓您存取最喜愛的歌唱應用程式和歌曲，而 100 瓦的強大 JBL 經典音效和令人目眩神迷的燈光秀能讓您享受明星般的體驗。</p>
+
+							<div class="flex py-4 space-x-4">
+								<div class="hidden relative">
+									<div class="text-center left-0 pt-2 right-0 absolute block text-xs uppercase text-gray-400 tracking-wide font-semibold">數量</div>
+									<select class="cursor-pointer appearance-none rounded-xl border border-gray-200 pl-4 pr-8 h-14 flex items-end pb-1">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+									<svg class="w-5 h-5 text-gray-400 absolute right-0 bottom-0 mb-2 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+									</svg>
+								</div>
+
+								<button type="button" class="h-14 px-6 py-2 font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white">加入詢價車</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mx-auto max-w-7xl">
+		<div class="container mx-auto mt-6 mb-6 px-4 py-4 md:px-12 md:py-8 bg-white shadow-2xl">
+		    <div class="border-b border-gray-200 dark:border-gray-700 mb-4">
+		        <ul class="flex flex-wrap -mb-px" id="myTab" data-tabs-toggle="#productContent" role="tablist">
+		            <li class="mr-2" role="presentation">
+		                <button class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-2xl font-bold text-center border-transparent border-b-2" id="introduction-tab" data-tabs-target="#introduction" type="button" role="tab" aria-controls="introduction" aria-selected="true">商品詳情</button>
+		            </li>
+		            <li class="mr-2" role="presentation">
+		                <button class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-2xl font-bold text-center border-transparent border-b-2" id="specification-tab" data-tabs-target="#specification" type="button" role="tab" aria-controls="specification" aria-selected="false">商品規格</button>
+		            </li>
+		        </ul>
+		    </div>
+		    <div id="productContent">
+		        <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
+		        	<h4 class="text-2xl font-semibold mb-4">隨時隨地開派對並隨之歡唱</h4>
+		        	<p class="leading-loose mb-8">JBL PartyBox On-The-Go 將任何派對都變成歌唱派對。使用隨附的 JBL 無線麥克風，您即可獨唱或對唱，或是插入您專屬的麥克風和樂器，展現您的音樂才華。藍牙、USB、AUX 和 TWS (True Wireless Stereo) 連線，提供更多方式讓您存取最喜愛的歌唱應用程式和歌曲，而 100 瓦的強大 JBL 經典音效和令人目眩神迷的燈光秀能讓您享受明星般的體驗。JBL PartyBox On-The-Go 提供鋪墊肩帶、充電式電池、開瓶器和 IPX4 防潑水保護功能，擁有您開派對所需的一切元素，而且可以隨身攜帶。</p>
+		        	<h4 class="text-2xl font-semibold mb-4">JBL 經典音效</h4>
+		        	<p class="leading-loose mb-8">100 瓦的強大 JBL 經典音效呈現震撼效果，讓您隨處搖擺。無論室內或室外，JBL PartyBox On-The-Go 都能傳送清晰的高音、純淨的中音和重低音，低音增強控制器可以讓美好時光持續一整夜。</p>
+		        	<h4 class="text-2xl font-semibold mb-4">與音樂同步的動態燈光秀</h4>
+		        	<p class="leading-loose mb-8">會讓賓客目眩神迷的動態燈光，點亮整場派對。提供各種預設模式讓您選擇，當您專注聆聽歌曲時，色彩則會隨著音樂節奏來變換。</p>
+		        	<h4 class="text-2xl font-semibold mb-4">隨附 2 支 JBL 無線麥克風</h4>
+		        	<p class="leading-loose mb-8">享受無限或無線的歡唱快感。JBL PartyBox On-The-Go 隨附兩支 JBL 無線麥克風，接收範圍長達 10 公尺。</p>
+		        	
+		        </div>
+		        <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+		            <h4 class="text-2xl font-semibold mb-4">進階的音效設定，讓您可以調整自己喜愛的歡唱效果</h4>
+		        	<p class="leading-loose mb-8">透過藍牙播放歌唱應用程式內的歌曲，接著調整喇叭上面的控制旋鈕：低音、高音和回聲，以獲得最棒的歌唱效果。 JBL PartyBox On-The-Go 提供雙麥克風輸入，您隨時可以與人對唱。</p>
+		        	<h4 class="text-2xl font-semibold mb-4">IPX4 防潑水保護</h4>
+		        	<p class="leading-loose mb-8">適合海灘狂歡、泳池派對或在雨中搖擺。IPX4 防潑水功能讓您的 JBL PartyBox On-The-Go 獲得保護，即使在派對上碰到潑水的情況也不必擔心。</p>
+		        	<h4 class="text-2xl font-semibold mb-4">便利的肩帶可將派對帶著走，整夜不停歇</h4>
+		        	<p class="leading-loose mb-8">JBL PartyBox On-The-Go 提供享受美好時光的所有元素，包含連在肩帶上的開瓶器，讓您在整夜隨著節奏擺動的同時，還能暢飲最喜愛的飲品。</p>
+		        </div>
+		    </div>
+	    </div>
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="PD01">
+			<!--<input name="header-ele" type="radio" id="PD02">-->
+			PD 02
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">
+		<div class="container mx-auto mt-3 mb-12 px-4 py-4 md:px-8 md:py-4 bg-white shadow-2xl">
+			<div class="py-6">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 lg:mb-8 overflow-hidden">
+					<div class="flex items-center space-x-2 text-gray-400 text-sm">
+						<a href="#" class="whitespace-nowrap hover:underline hover:text-gray-600">首頁</a>
+						<span>
+							<i class="fa fa-angle-right leading-none text-gray-300"></i>
+						</span>
+						<a href="#" class="whitespace-nowrap hover:underline hover:text-gray-600">產品介紹</a>
+						<span class="hidden sm:inline">
+							<i class="fa fa-angle-right leading-none text-gray-300"></i>
+						</span>
+						<a href="#" class="hidden sm:inline hover:underline hover:text-gray-600">家庭音響</a>
+						<span class="hidden sm:inline">
+							<i class="fa fa-angle-right leading-none text-gray-300"></i>
+						</span>
+						<a href="#" class="hidden sm:inline hover:underline hover:text-gray-600">家用音響</a>
+						<span>
+							<i class="fa fa-angle-right leading-none text-gray-300"></i>
+						</span>
+						<span class="whitespace-nowrap text-indigo-600 truncate">JBL PARTYBOX ON THE GO 便攜式卡拉OK藍牙喇叭</span>
+					</div>
+				</div>
+
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+					<div class="flex flex-col md:flex-row -mx-4">
+						<aside class="w-full sm:w-1/4 lg:w-1/4 px-4">
+							<h3 class="text-2xl font-extrabold leading-none text-gray-900">產品介紹</h3>
+							<ul class="mt-8 divide divide-y">
+								<li><a href="#" class="block py-3 font-bold hover:text-indigo-600">無線</a></li>
+								<li><a href="#" class="block py-3 font-bold hover:text-indigo-600">耳機</a>
+									<ul class="list-disc list-outside mb-6 pl-5">
+										<li><a href="#">頭戴式 & 耳掛式耳機</a></li>
+										<li><a href="#">入耳式耳機</a></li>
+										<li><a href="#">無線耳機</a></li>
+										<li><a href="#">運動耳機</a></li>
+									</ul>
+								</li>
+								<li><a href="#" class="block py-3 font-bold text-indigo-600">家庭音響</a>
+									<ul class="list-disc list-outside mb-6 pl-5">
+										<li><a href="#" class="text-indigo-600">家用音響</a></li>
+										<li><a href="#">條形音響</a></li>
+										<li><a href="#">音響</a></li>
+									</ul>
+								</li>
+								<li><a href="#" class="block py-3 font-bold hover:text-indigo-600">JBL Quantum 系列</a></li>
+								<li><a href="#" class="block py-3 font-bold hover:text-indigo-600">車用/航海</a></li>
+							</ul>
+						</aside>
+						<div class="w-full sm:w-2/3 lg:w-3/4 px-4">
+							<h2 class="mb-12 pb-8 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl border-b border-b-gray-300">JBL PARTYBOX ON THE GO 便攜式卡拉OK藍牙喇叭</h2>
+							<div class="fck-box">
+								<h3 class="mb-4 font-bold text-2xl text-indigo-600">輕鬆播放音樂。強勁的 JBL 音效。</h3>
+								<p class="mb-12">從廚房到客廳，JBL Link Music 均可為您帶來風格張揚且活力四射的 JBL 360 度全方位專業音效。透過 Google Assistant 播放和控制您最喜歡的音樂、存取 Spotify、YouTube Music 和 Apple Music，在毫無干擾的環境中享受聆聽。僅需說出「Hey Google」即可開始。挑選最適合您的 JBL Link Music，有六種時尚顏色可供選擇。</p>
+								<div class="flex flex-col lg:flex-row lg:items-center">
+									<img src="img/img-7.jpg" class="w-full lg:w-1/2">
+									<div class="w-full lg:w-1/2 lg:px-10">
+										<h3 class="mb-4 font-bold text-2xl">JBL 360 度全方位專業音效</h3>
+										<p class="text-gray-500">讓您沉浸於音樂環繞之中。JBL Link Music 透過 360 度全方位的全音域感測器，讓您在各個方向都能感受到音樂的律動。請盡情享受水晶般澄澈的高音、銳利的中音與深沉有力的低音。</p>
+									</div>
+								</div>
+								<div class="flex flex-col lg:flex-row lg:items-center my-12">
+									<img src="img/img-8.jpg" class="w-full lg:w-1/2 lg:order-2">
+									<div class="w-full lg:w-1/2 lg:px-10">
+										<h3 class="mb-4 font-bold text-2xl">Wi-Fi 或 Bluetooth® 藍牙無線播放</h3>
+										<p class="text-gray-500">您可在 JBL Link Music 上輕鬆播放音樂。透過 Wi-Fi 或 Bluetooth® 藍牙的無縫體驗，讓音樂永不止歇，還可不受干擾地輕鬆存取 Spotify、YouTube Music 或 Apple Music。</p>
+									</div>
+								</div><div class="flex flex-col lg:flex-row lg:items-center">
+									<img src="img/img-9.jpg" class="w-full lg:w-1/2">
+									<div class="w-full lg:w-1/2 lg:px-10">
+										<h3 class="mb-4 font-bold text-2xl">Google Assistant 提供幫助，無需動手操作</h3>
+										<p class="text-gray-500">僅需說出「Hey Google」，即可要求 Google Assistant 播放您最喜歡的歌曲，並輕鬆存取所有音樂</p>
+									</div>
+								</div>
+							</div>
+							<div class="tabs-according mt-6 lg:mt-12">
+								<div class="tab w-full overflow-hidden border-t border-gray-300">
+									<input class="absolute opacity-0" id="tab-single-one" type="radio" name="tabs2">
+									<label class="block py-5 leading-normal cursor-pointer" for="tab-single-one">一般規格</label>
+									<div class="tab-content overflow-hidden leading-normal bg-gray-100">
+										<div class="p-5">
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">轉換器：1 x 64mm</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">輸出功率：1 x 20W</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">頻率回應：60Hz-20kHz</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">雜訊比：>80dB</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">受支援的音訊格式：HE-AAC、LC-AAC、MP3、Vorbis、WAV (LPCM)、FLAC、Opus</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">尺寸（直徑 x 高）：112 x 134 mm</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">重量：730g</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+										</div>								
+									</div>
+								</div>
+								<div class="tab w-full overflow-hidden border-t border-gray-300">
+									<input class="absolute opacity-0" id="tab-single-two" type="radio" name="tabs2">
+									<label class="block py-5 leading-normal cursor-pointer" for="tab-single-two">控制和連接規格</label>
+									<div class="tab-content overflow-hidden leading-normal bg-gray-100">
+										<div class="p-5">
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">轉換器：1 x 64mm</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">輸出功率：1 x 20W</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">頻率回應：60Hz-20kHz</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">雜訊比：>80dB</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">受支援的音訊格式：HE-AAC、LC-AAC、MP3、Vorbis、WAV (LPCM)、FLAC、Opus</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">尺寸（直徑 x 高）：112 x 134 mm</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+											<dl class="flex flex-col py-3 lg:flex-row border-b border-b-gray-100">
+												<dt class="lg:w-2/3">重量：730g</dt>
+												<dd class="lg:w-1/3">Yes</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<div class="tab w-full overflow-hidden border-t border-b border-gray-300">
+									<input class="absolute opacity-0" id="tab-single-three" type="radio" name="tabs2">
+									<label class="block py-5 leading-normal cursor-pointer" for="tab-single-three">Notification</label>
+									<div class="tab-content overflow-hidden leading-normal bg-gray-100">
+										<p class="p-5">Google, YouTube, Google Home and Chromecast built-in are trademarks of Google LLC.</p>
+									</div>
+								</div>
+							</div>
+							<script>
+								/* Optional Javascript to close the radio button version by clicking it again */
+								var myRadios = document.getElementsByName('tabs2');
+								var setCheck;
+								var x = 0;
+								for(x = 0; x < myRadios.length; x++){
+									myRadios[x].onclick = function(){
+										if(setCheck != this){
+												setCheck = this;
+										}else{
+											this.checked = false;
+											setCheck = null;
+									}
+									};
+								}
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

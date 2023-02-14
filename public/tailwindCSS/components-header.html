@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keyword" content="">
+
+<base href="">
+
+<meta name="author" content="www.ozchamp.com">
+<meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>區塊總覽-頭部</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+<!--CSS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/9aaa47093c.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+<style type="text/css">
+::-webkit-scrollbar { width: 6px; height: 6px; border-radius: 3px;}
+::-webkit-scrollbar-thumb { border-radius: 3px; background: #333; }
+::-webkit-scrollbar-thumb:hover { background: #ff6d34; }
+#facebook, #twitter, #lineme { width: 32px; height: 32px;}
+#facebook rect { fill: #385997;}
+#facebook path { fill: #ffffff;}
+#twitter rect { fill: #00aade;}
+#twitter path { fill: #ffffff;}
+#lineme rect,
+#lineme .path2 { fill: #00cf2e;}
+#lineme path { fill: #ffffff;}
+input[type="radio"] { width: 1.2rem; height: 1.2rem; background: white; vertical-align: middle; }
+label { display: inline-block; font-weight: bold; line-height: 1.2rem; cursor: pointer;}
+</style>
+</head>
+
+<body class="bg-slate-300 p-4 sm:p-5 md:px-20 md:pt-12 md:pb-20">
+
+	<h3 class="text-2xl mb-6 font-black text-center">主選單</h3>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="HD01">
+			<!--<input name="header-ele" type="radio" id="HD01">-->
+			HD 01
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">		
+		<header class="header mt-3 mb-12 bg-white shadow-xl">
+	        <div class="container relative mx-auto flex justify-between items-center px-5 py-5 w-full h-full" x-data="{ showMenu: false }">
+	            <div class="logo grow order-2 sm:order-1">
+	                <a href="/">
+	                    <img src="img/logo.svg" class="mx-auto w-16 md:w-20 lg:w-22">                   
+	                </a>
+	            </div>
+	            <div class="sm:order-2 justify-center items-start md:items-center hidden w-full h-auto p-4 md:p-0 md:relative md:flex" :class="{'flex absolute z-50 left-0 top-20 bg-white shadow-xl shadow-gray-500/20': showMenu, 'hidden': !showMenu }">
+	                <nav class="flex flex-col w-full justify-center items-stretch sm:items-center md:flex-row">
+	                    <a class="p-3 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">首頁</a>
+	                    <a class="p-3 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">網站作品</a>
+	                    <a class="p-3 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">專業服務</a>
+	                    <a class="p-3 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">資訊分享</a>
+	                    <a class="p-3 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">關於我們</a>
+	                    <a class="p-3 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">聯絡我們</a>
+	                </nav>
+	            </div>
+	            <div class="relative order-3 sm:order-2" x-data="{ showDropdown: false }">
+	                <div class="block mr-0 sm:mr-2" @click="showDropdown = !showDropdown">
+	                    <span class="flex items-center justify-center w-12 h-12 bg-gray-200 text-gray-900 rounded-full hover:bg-indigo-600 hover:text-white cursor-pointer"><i class="fas fa-search"></i></span>
+	                </div>
+	                <div class="absolute z-50 top-16 right-0 bg-white shadow-xl shadow-gray-500/20 rounded-full overflow-hidden border border-gray-200" x-show="showDropdown">
+	                    <form class="flex px-2 py-2">
+	                        <input class="px-3 py-1 rounded-full focus:outline-none" type="text">
+	                        <button class="flex items-center justify-center w-12 h-12 bg-indigo-600 text-white rounded-full" type="submit"><i class="fas fa-search"></i></button>
+	                    </form>
+	                </div>
+	            </div>
+	            <div @click="showMenu = !showMenu" class="block ml-0 sm:ml-2 bg-gray-200 text-gray-900 rounded-full hover:bg-indigo-600 hover:text-white cursor-pointer md:hidden order-1 sm:order-auto">
+	                <span class="flex items-center justify-center w-12 h-12"><i class="fas fa-bars"></i></span>
+	            </div>
+	        </div>
+	    </header>
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="HD02">
+			<!--<input name="header-ele" type="radio" id="HD02">-->
+			HD 02
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">
+		<header class="header mt-3 mb-12 bg-white shadow-xl">
+	        <div class="container relative mx-auto flex flex-row flex-wrap md:flex-col justify-between items-center w-full h-full" x-data="{ showMenu: false }">
+	            <div class="logo grow p-5">
+	                <a href="/">
+	                    <img src="img/logo.svg" class="w-16 md:w-20 lg:w-22">                   
+	                </a>
+	            </div>
+	            <div class="left-0 hidden w-full h-auto p-5 bg-white sm:bg-gray-200 sm:p-1 md:p-2 md:flex" :class="{'flex relative order-3 bg-white': showMenu, 'hidden': !showMenu }">
+	                <nav class="flex flex-col justify-center items-start md:items-center w-full md:flex-row justify-items-stretch sm:justity-center sm:items-center">
+						<ul class="flex w-full flex-col md:w-auto md:flex-row md:items-center divide-y divide-slate-200 sm:divide-y-0">
+							<li class="pt-2 pb-2 sm:pt-0 sm:pb-0 sm:pl-2 sm:pr-2 lg:pl-6 lg:pr-6">
+								<a class="relative block w-8 h-6 font-bold text-gray-600 overflow-hidden" href="#">
+									<span class="absolute hover:-translate-y-2/4 hover:duration-300 hover:ease-in-out after:content-['首頁'] after:block after:text-indigo-600">首頁</span>
+								</a>
+							</li>
+							<li class="pt-2 pb-2 sm:pt-0 sm:pb-0 sm:pl-2 sm:pr-2 lg:pl-6 lg:pr-6">
+								<a class="relative block w-16 h-6 font-bold text-gray-600 overflow-hidden" href="#">
+									<span class="absolute hover:-translate-y-2/4 hover:duration-300 hover:ease-in-out after:content-['網站作品'] after:block after:text-indigo-600">網站作品</span>
+								</a>
+							</li>
+							<li class="pt-2 pb-2 sm:pt-0 sm:pb-0 sm:pl-2 sm:pr-2 lg:pl-6 lg:pr-6">
+								<a class="relative block w-16 h-6 font-bold text-gray-600 overflow-hidden" href="#">
+									<span class="absolute hover:-translate-y-2/4 hover:duration-300 hover:ease-in-out after:content-['專業服務'] after:block after:text-indigo-600">專業服務</span>
+								</a>
+							</li>
+							<li class="pt-2 pb-2 sm:pt-0 sm:pb-0 sm:pl-2 sm:pr-2 lg:pl-6 lg:pr-6">
+								<a class="relative block w-16 h-6 font-bold text-gray-600 overflow-hidden" href="#">
+									<span class="absolute hover:-translate-y-2/4 hover:duration-300 hover:ease-in-out after:content-['資訊分享'] after:block after:text-indigo-600">資訊分享</span>
+								</a>
+							</li>
+							<li class="pt-2 pb-2 sm:pt-0 sm:pb-0 sm:pl-2 sm:pr-2 lg:pl-6 lg:pr-6">
+								<a class="relative block w-16 h-6 font-bold text-gray-600 overflow-hidden" href="#">
+									<span class="absolute hover:-translate-y-2/4 hover:duration-300 hover:ease-in-out after:content-['關於我們'] after:block after:text-indigo-600">關於我們</span>
+								</a>
+							</li>
+							<li class="pt-2 pb-2 sm:pt-0 sm:pb-0 sm:pl-2 sm:pr-2 lg:pl-6 lg:pr-6">
+								<a class="relative block w-16 h-6 font-bold text-gray-600 overflow-hidden" href="#">
+									<span class="absolute hover:-translate-y-2/4 hover:duration-300 hover:ease-in-out after:content-['聯絡我們'] after:block after:text-indigo-600">聯絡我們</span>
+								</a>
+							</li>
+						</ul>
+						<div class="flex w-full md:w-auto mt-4 sm:mt-0 md:ml-10 bg-gray-100 border border-gray-300 rounded-full">
+							<input type="text" class="bg-gray-100 text-gray-900 text-sm w-full md:w-32 rounded-full focus:ring-blue-500 focus:border-blue-500 block p-2.5 outline-none">
+							<button type="button" class="px-4"><i class="fas fa-search"></i></button>
+						</div>
+	                </nav>
+	            </div>
+	            <div @click="showMenu = !showMenu" class="block ml-2 mr-5 bg-gray-200 text-gray-900 rounded-full hover:bg-indigo-600 hover:text-white cursor-pointer md:hidden">
+	                <span class="flex items-center justify-center w-12 h-12"><i class="fas fa-bars"></i></span>
+	            </div>
+	        </div>
+	    </header>
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="HD03">
+			<!--<input name="header-ele" type="radio" id="HD03">-->
+			HD 03
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">
+		<header class="header mt-3 mb-12 bg-white shadow-xl">
+	        <div class="container relative mx-auto flex flex-wrap justify-between items-center w-full h-full" x-data="{ showMenu: false }">
+	            <div class="flex w-full justify-between items-center bg-indigo-600 p-1">
+					<div class="header-contact flex text-white text-sm">
+						<a href="https://www.ozchamp.com" target="_blank" class="pl-3 pr-6 hover:text-indigo-100"><span>元伸網頁設計</span></a><a href="tel:+886-3-366-1000" class="pr-6 hover:text-indigo-100"><i class="fas fa-phone mr-2"></i><span class="hidden sm:inline">+886-3-366-1000</span></a><a href="mailto:services@ozchamp.net" class="pr-6 hover:text-indigo-100"><i class="fas fa-envelope mr-2"></i><span class="hidden sm:inline">services@ozchamp.net</span></a>
+					</div>
+					<div class="header-social flex gap-1">
+						<a href="#">
+							<svg data-name="facebook" id="facebook" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><rect height="64" rx="2" ry="2" width="64"/><path d="M54.4,29.6h-10V22c0-1.86,2.14-2,2.8-2H54V9.6H47.2C39.67,9.6,34,14.93,34,22v7.6H25.6V40H34V64H44.4V40h8.4Z"/></svg>
+						</a>
+						<a href="#">
+							<svg data-name="lineme" id="lineme" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g><rect height="64" rx="2" ry="2" transform="translate(64 64) rotate(180)" width="64"/><path d="M56.4,28.4C56.4,19.6,46,10,32.4,10c-13.25,0-24,7.8-24,18.4,0,9.78,8.38,17.86,20.17,19.05a2.38,2.38,0,0,1,1.79,1.06A2.82,2.82,0,0,1,30.8,50a19,19,0,0,1-.36,3.23.8.8,0,0,0,1.1.91C37.19,51.64,56.4,41.36,56.4,28.4Z"/><path class="path2" d="M23.6,32.8H20V24.4a1.2,1.2,0,1,0-2.4,0V34a1.2,1.2,0,0,0,1.2,1.2h4.8a1.2,1.2,0,0,0,0-2.4Z"/><path class="path2" d="M26.8,23.2a1.2,1.2,0,0,0-1.2,1.2V34A1.2,1.2,0,0,0,28,34V24.4A1.2,1.2,0,0,0,26.8,23.2Z"/><path class="path2" d="M38,23.2a1.2,1.2,0,0,0-1.2,1.2v6l-5-6.72a1.2,1.2,0,0,0-2.16.72V34A1.2,1.2,0,0,0,32,34V28l5,6.72a1.19,1.19,0,0,0,1,.48,1.26,1.26,0,0,0,.38-.06A1.2,1.2,0,0,0,39.2,34V24.4A1.2,1.2,0,0,0,38,23.2Z"/><path class="path2" d="M46.8,30.4a1.2,1.2,0,1,0,0-2.4H43.2V25.6h3.6a1.2,1.2,0,1,0,0-2.4H42a1.2,1.2,0,0,0-1.2,1.2V34A1.2,1.2,0,0,0,42,35.2h4.8a1.2,1.2,0,0,0,0-2.4H43.2V30.4Z"/></g></svg>
+						</a>
+					</div>
+				</div>
+				<div class="logo grow p-5 sm:p-6">
+	                <a href="/">
+	                    <img src="img/logo.svg" class="w-16 md:w-18 lg:w-22">                   
+	                </a>
+	            </div>
+	            <div class="top-20 left-0 md:top-0 justify-center items-start md:items-center hidden w-full h-auto md:w-auto p-4 md:p-0 md:relative md:flex" :class="{'flex absolute z-50 top-full bg-white': showMenu, 'hidden': !showMenu }">
+	                <nav class="flex flex-col w-full justity-center items-stretch sm:items-center md:flex-row divide-y divide-slate-200 sm:divide-y-0">
+	                    <a class="block px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">首頁</a>
+	                    <a class="block px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">網站作品</a>
+	                    <a class="block px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">專業服務</a>
+	                    <a class="block px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">資訊分享</a>
+	                    <a class="block px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">關於我們</a>
+	                    <a class="block px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">聯絡我們</a>
+	                </nav>
+	            </div>
+	            <div @click="showMenu = !showMenu" class="block mr-5 sm:mr-6 bg-gray-200 text-gray-900 rounded hover:bg-indigo-600 hover:text-white cursor-pointer md:hidden">
+	                <span class="flex items-center justify-center w-12 h-12"><i class="fas fa-bars"></i></span>
+	            </div>
+	        </div>
+	    </header>
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="HD04">
+			<!--<input name="header-ele" type="radio" id="HD04">-->
+			HD 04
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">
+		<header class="header mt-3 mb-12 bg-white shadow-xl">
+	        <div class="container relative mx-auto flex flex-row flex-wrap justify-between items-center w-full h-full" x-data="{ showMenu: false }">
+	            <div class="logo grow p-5">
+	                <a href="/">
+	                    <img src="img/logo.svg" class="w-16 md:w-20 lg:w-22">                   
+	                </a>
+	            </div>
+	            <div class="flex-col hidden w-full sm:w-auto  h-auto p-5 sm:p-1 md:p-2 md:flex" :class="{'flex relative order-3 bg-white': showMenu, 'hidden': !showMenu }">
+					<div class="hidden sm:block mb-4">
+						<ul class="flex flex-row justify-end lg:justify-center lg:items-center text-xs text-gray-400">
+							<li class="pr-4"><a href="tel:+886-3-366-1000 "><i class="fas fa-phone pr-2"></i><span class="hidden lg:inline">+886-3-366-1000</span></a></li>
+							<li class="pr-4"><a href="mailto:services@ozchamp.net"><i class="fas fa-envelope pr-2"></i><span class="hidden lg:inline">services@ozchamp.net</span></a></li>
+							<li class="pr-4"><a href="#" target="_blank"><i class="fas fa-map-marker pr-2"></i><span class="hidden lg:inline">台灣330桃園市桃園區介壽路 288號 7F</span></a></li>
+							<!--
+							<li class="pr-4 relative" x-data="{ open: false }">
+								<div class="cursor-pointer" @click="open = true"><i class="fas fa-globe pr-2"></i>繁体中文 <i class="fas fa-angle-down pl-2"></i></div>
+								<div class="absolute z-50 top-5 left-0 bg-white shadow-xl shadow-gray-500/20 overflow-hidden border border-gray-200" x-show="open" @click.away="open = false">
+									<div class="w-24 divide-y divide-slate-200 text-center">
+										<a class="block p-3" href="#">繁体中文</a>
+										<a class="block p-3" href="#">ENGLISH</a>
+									</div>
+								</div>
+							</li>
+							-->
+							<li><a href="https://www.facebook.com/webdesign.oz" target="_blank"><i class="fab fa-facebook pr-2"></i></a></li>
+						</ul>
+					</div>
+	                <nav class="flex flex-col justify-center items-start md:items-center w-full md:flex-row justify-items-stretch sm:justity-center sm:items-center">
+						<ul class="flex w-full flex-col md:w-auto md:flex-row divide-y divide-slate-200 sm:divide-y-0">
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600hover:text-indigo-600" href="#">首頁</a></li>
+							<li class="relative" x-data="{ open: false }">
+								<div class="flex justify-between items-center px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600 cursor-pointer" @click="open = true">網站作品 <i class="fas fa-angle-down pl-2"></i></div>
+								<div class="relatvie sm:absolute sm:z-50 sm:top-auto sm:left-0 bg-gray-100 sm:bg-white sm:shadow-xl sm:shadow-gray-500/20 overflow-hidden sm:border sm:border-gray-200" x-show="open" @click.away="open = false">
+									<div class="w-auto sm:w-32 divide-y divide-slate-200 sm:text-center text-sm">
+										<a class="block p-3" href="#">企業形象</a>
+										<a class="block p-3" href="#">產品型錄</a>
+										<a class="block p-3" href="#">網路購物</a>
+										<a class="block p-3" href="#">線上詢價</a>
+										<a class="block p-3" href="#">報名訂位</a>
+										<a class="block p-3" href="#">其他應用</a>
+									</div>
+								</div>
+							</li>
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">專業服務</a></li>
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">資訊分享</a></li>
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">關於我們</a></li>
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">聯絡我們</a></li>
+						</ul>
+	                </nav>
+	            </div>
+	            <div @click="showMenu = !showMenu" class="block mr-5 bg-gray-200 text-gray-900 hover:bg-indigo-600 hover:text-white cursor-pointer md:hidden rounded">
+	                <span class="flex items-center justify-center w-12 h-12"><i class="fas fa-bars"></i></span>
+	            </div>
+	        </div>
+	    </header>
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="HD05">
+			<!--<input name="header-ele" type="radio" id="HD05">-->
+			HD 05
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl bg-gray-100">
+		<header class="header mt-3 mb-12 w-full sm:max-w-max bg-white shadow-xl">
+	        <div class="container relative mx-auto flex flex-row flex-wrap sm:flex-col justify-between items-center px-5 py-5 w-auto h-full" x-data="{ showMenu: false }">
+	            <div class="logo grow p-0 sm:p-6 lg:p-12">
+	                <a href="/">
+	                    <img src="img/logo.svg" class="w-16 md:w-20 lg:w-22">                   
+	                </a>
+	            </div>
+	            <div class="flex-col justify-center items-start md:flex md:items-center w-full justify-items-stretch sm:justity-center sm:items-center" :class="{'block relative top-5 order-3 bg-white': showMenu, 'hidden': !showMenu }">
+	                <nav class="flex flex-col w-full justify-center items-stretch divide-y divide-slate-200 sm:divide-y-0">
+	                    <a class="px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">首頁</a>
+	                    <a class="px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">網站作品</a>
+	                    <a class="px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">專業服務</a>
+	                    <a class="px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">資訊分享</a>
+	                    <a class="px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">關於我們</a>
+	                    <a class="px-5 py-3 font-bold text-gray-600 hover:text-indigo-600" href="#">聯絡我們</a>
+	                </nav>
+	            </div>
+	            <div @click="showMenu = !showMenu" class="block ml-2 bg-gray-200 text-gray-900 rounded hover:bg-indigo-600 hover:text-white cursor-pointer md:hidden order-2 sm:order-auto">
+	                <span class="flex items-center justify-center w-12 h-12"><i class="fas fa-bars"></i></span>
+	            </div>
+	        </div>
+	    </header>
+	</section>
+
+</body>
+</html>

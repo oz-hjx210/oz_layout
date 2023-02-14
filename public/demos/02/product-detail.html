@@ -1,0 +1,297 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keyword" content="">
+
+<base href="">
+
+<meta name="author" content="www.ozchamp.com">
+<meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>DEMO - Product</title>
+<!--Tailwindcss-->
+<script src="https://cdn.tailwindcss.com"></script>
+<!--fontawesome icon-->
+<script src="https://kit.fontawesome.com/9aaa47093c.js" crossorigin="anonymous"></script>
+<!--JS-->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+<!--Custom CSS-->
+<style type="text/css">
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+        <!--Header-->
+        <header class="header bg-white">
+	        <div class="container relative mx-auto flex flex-row flex-wrap justify-between items-center w-full h-full" x-data="{ showMenu: false }">
+	            <div class="logo grow p-5">
+	                <a href="/">
+	                    <img src="img/logo.svg" class="w-16 md:w-20 lg:w-22">                   
+	                </a>
+	            </div>
+	            <div class="flex-col hidden w-full sm:w-auto  h-auto p-5 sm:p-1 md:p-2 md:flex" :class="{'flex relative order-3 bg-white': showMenu, 'hidden': !showMenu }">
+					<div class="hidden sm:block mb-4">
+						<ul class="flex flex-row justify-end lg:justify-center lg:items-center text-xs text-gray-400">
+							<li class="pr-4"><a href="tel:+886-3-366-1000 "><i class="fas fa-phone pr-2"></i><span class="hidden lg:inline">+886-3-366-1000</span></a></li>
+							<li class="pr-4"><a href="mailto:services@ozchamp.net"><i class="fas fa-envelope pr-2"></i><span class="hidden lg:inline">services@ozchamp.net</span></a></li>
+							<li class="pr-4"><a href="#" target="_blank"><i class="fas fa-map-marker pr-2"></i><span class="hidden lg:inline">台灣330桃園市桃園區介壽路 288號 7F</span></a></li>
+							<li class="pr-4 relative" x-data="{ open: false }">
+								<div class="cursor-pointer" @click="open = true"><i class="fas fa-globe pr-2"></i>繁体中文 <i class="fas fa-angle-down pl-2"></i></div>
+								<div class="absolute z-50 top-5 left-0 bg-white shadow-xl shadow-gray-500/20 overflow-hidden border border-gray-200" x-show="open" @click.away="open = false">
+									<div class="w-24 divide-y divide-slate-200 text-center">
+										<a class="block p-3" href="#">繁体中文</a>
+										<a class="block p-3" href="#">ENGLISH</a>
+									</div>
+								</div>
+							</li>
+							<li><a href="https://www.facebook.com/webdesign.oz" target="_blank"><i class="fab fa-facebook pr-2"></i></a></li>
+						</ul>
+					</div>
+	                <nav class="flex flex-col justify-center lg:justify-end items-start md:items-center w-full md:flex-row justify-items-stretch sm:justity-center sm:items-center">
+						<ul class="flex w-full flex-col md:w-auto md:flex-row divide-y divide-slate-200 sm:divide-y-0">
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600hover:text-indigo-600" href="index.html">首頁</a></li>
+                            <li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="about.html">關於我們</a></li>
+							<li class="relative" x-data="{ open: false }">
+								<div class="flex justify-between items-center px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600 cursor-pointer" @click="open = true">產品介紹 <i class="fas fa-angle-down pl-2"></i></div>
+								<div class="relatvie sm:absolute sm:z-50 sm:top-auto sm:left-0 bg-gray-100 sm:bg-white sm:shadow-xl sm:shadow-gray-500/20 overflow-hidden sm:border sm:border-gray-200" x-show="open" @click.away="open = false">
+									<div class="w-auto sm:w-32 divide-y divide-slate-200 sm:text-center text-sm">
+										<a class="block p-3" href="product.html">子分類 01</a>
+										<a class="block p-3" href="product.html">子分類 02</a>
+										<a class="block p-3" href="product.html">子分類 03</a>
+										<a class="block p-3" href="product.html">子分類 04</a>
+										<a class="block p-3" href="product.html">子分類 05</a>
+									</div>
+								</div>
+							</li>
+                            <li class="relative" x-data="{ open: false }">
+                                <div class="flex justify-between items-center px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600 cursor-pointer" @click="open = true">新聞中心 <i class="fas fa-angle-down pl-2"></i></div>
+                                <div class="relatvie sm:absolute sm:z-50 sm:top-auto sm:left-0 bg-gray-100 sm:bg-white sm:shadow-xl sm:shadow-gray-500/20 overflow-hidden sm:border sm:border-gray-200" x-show="open" @click.away="open = false">
+                                    <div class="w-auto sm:w-32 divide-y divide-slate-200 sm:text-center text-sm">
+                                        <a class="block p-3" href="news.html">子分類 01</a>
+                                        <a class="block p-3" href="news.html">子分類 02</a>
+                                        <a class="block p-3" href="news.html">子分類 03</a>
+                                        <a class="block p-3" href="news.html">子分類 04</a>
+                                        <a class="block p-3" href="news.html">子分類 05</a>
+                                    </div>
+                                </div>
+                            </li>						
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="contact.html">聯絡我們</a></li>
+						</ul>
+	                </nav>
+	            </div>
+	            <div @click="showMenu = !showMenu" class="block mr-5 bg-gray-200 text-gray-900 hover:bg-indigo-600 hover:text-white cursor-pointer md:hidden rounded">
+	                <span class="flex items-center justify-center w-12 h-12"><i class="fas fa-bars"></i></span>
+	            </div>
+	        </div>
+	    </header>
+
+        <!--Page Banner & Breadcrumb-->
+        <section class="page-banner bg-cover bg-center bg-black" style="background-image: url('img/slider.jpg');">
+            <div class="inner py-16 flex flex-col justity-center bg-black/60 text-center text-white">
+                <div class="banner-heading">
+                    <h1 class="text-5xl font-bold">產品介紹</h1>
+                </div>            
+                <div class="breadcrumb mt-6 text-sm text-white/60">
+                    <a href="#">首頁</a>
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">產品介紹</a>
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">家庭音響</a>
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">家用音響</a>
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">JBL Quantum</a>                    
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">JBL Quantum</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Product Detail-->
+        <section class="product-top mx-auto">
+            <div class="container max-w-7xl mx-auto mt-12 mb-6 bg-white border border-gray-300">
+                <div class="px-8 py-12">    
+                    <div class="max-w-7xl mx-auto">
+                        <div class="flex flex-col flex-wrap md:flex-row">
+                            <div class="w-full lg:flex-1 px-4">
+                                <div id="default-carousel" class="relative mb-6 sm:mb-0" data-carousel="static">
+                                    <div class="overflow-hidden relative h-40 sm:h-80">
+                                        <div class="hidden duration-700 ease-in-out bg-gradient-to-bl from-indigo-600 to-blue-500" data-carousel-item>
+                                            <img src="img/img-7.jpg" class="block w-full h-auto object-cover">
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out bg-black" data-carousel-item>
+                                            <img src="img/img-8.jpg" class="block w-full h-auto object-cover">
+                                        </div>
+                                        <div class="hidden duration-700 ease-in-out bg-gradient-to-bl from-indigo-600 to-blue-500" data-carousel-item>
+                                            <img src="img/img-9.jpg" class="block w-full h-auto object-cover">
+                                        </div>						            
+                                        <div class="hidden duration-700 ease-in-out bg-gradient-to-bl from-indigo-600 to-blue-500" data-carousel-item>
+                                            <img src="img/img-10.jpg" class="block w-full h-auto object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-center mt-3 space-x-3">
+                                        <button type="button" class="w-24 h-18 overflow-hidden" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0">
+                                            <img src="img/img-7.jpg" class="block w-full h-auto">
+                                        </button>
+                                        <button type="button" class="w-24 h-18 overflow-hidden" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1">
+                                            <img src="img/img-8.jpg" class="block w-full h-auto">
+                                        </button>
+                                        <button type="button" class="w-24 h-18 overflow-hidden" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2">
+                                            <img src="img/img-9.jpg" class="block w-full h-auto">
+                                        </button>
+                                        <button type="button" class="w-24 h-18 overflow-hidden" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3">
+                                            <img src="img/img-10.jpg" class="block w-full h-auto">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:flex-1 px-4">
+                                <h2 class="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">JBL PARTYBOX ON THE GO 便攜式卡拉OK藍牙喇叭</h2>
+                                <p class="hidden text-gray-500 text-sm">庫存<small>100</small></p>
+    
+                                <div class="sm:hidden flex items-center space-x-4 my-4">
+                                    <div>
+                                        <div class="rounded-lg bg-gray-100 flex py-2 px-3">
+                                            <span class="text-indigo-400 mr-1 mt-1">NT$</span>
+                                            <span class="font-bold text-indigo-600 text-3xl">2,500</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <p class="text-green-500 text-xl font-semibold">節省 12%</p>
+                                        <p class="text-gray-400 text-sm">包含所有稅費。</p>
+                                    </div>
+                                </div>
+    
+                                <p class="my-8 text-gray-500">使用隨附的 JBL 無線麥克風，您即可獨唱或對唱，或是插入您專屬的麥克風和樂器，展現您的音樂才華。藍牙、USB、AUX 和 TWS (True Wireless Stereo) 連線，提供更多方式讓您存取最喜愛的歌唱應用程式和歌曲，而 100 瓦的強大 JBL 經典音效和令人目眩神迷的燈光秀能讓您享受明星般的體驗。</p>
+                                <p class="my-8 text-gray-500">使用隨附的 JBL 無線麥克風，您即可獨唱或對唱，或是插入您專屬的麥克風和樂器，展現您的音樂才華。藍牙、USB、AUX 和 TWS (True Wireless Stereo) 連線，提供更多方式讓您存取最喜愛的歌唱應用程式和歌曲，而 100 瓦的強大 JBL 經典音效和令人目眩神迷的燈光秀能讓您享受明星般的體驗。</p>
+    
+                                <div class="flex py-4 space-x-4">
+                                    <div class="hidden relative">
+                                        <div class="text-center left-0 pt-2 right-0 absolute block text-xs uppercase text-gray-400 tracking-wide font-semibold">數量</div>
+                                        <select class="cursor-pointer appearance-none rounded-xl border border-gray-200 pl-4 pr-8 h-14 flex items-end pb-1">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                        <svg class="w-5 h-5 text-gray-400 absolute right-0 bottom-0 mb-2 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+                                        </svg>
+                                    </div>
+    
+                                    <button type="button" class="h-14 px-6 py-2 font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white">加入詢價車</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product-bottom mx-auto">
+            <div class="container max-w-7xl mx-auto mt-6 mb-12 px-12 py-6 bg-white border border-gray-300">
+                <div class="border-b border-gray-200 dark:border-gray-700 mb-4">
+                    <ul class="flex flex-wrap -mb-px" id="myTab" data-tabs-toggle="#productContent" role="tablist">
+                        <li class="mr-2" role="presentation">
+                            <button class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-2xl font-bold text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300" id="introduction-tab" data-tabs-target="#introduction" type="button" role="tab" aria-controls="introduction" aria-selected="true">商品詳情</button>
+                        </li>
+                        <li class="mr-2" role="presentation">
+                            <button class="inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-2xl font-bold text-center border-transparent border-b-2 dark:text-gray-400 dark:hover:text-gray-300" id="specification-tab" data-tabs-target="#specification" type="button" role="tab" aria-controls="specification" aria-selected="false">商品規格</button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="productContent">
+                    <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800" id="introduction" role="tabpanel" aria-labelledby="introduction-tab">
+                        <h4 class="text-2xl font-semibold mb-4">隨時隨地開派對並隨之歡唱</h4>
+                        <p class="leading-loose mb-8">JBL PartyBox On-The-Go 將任何派對都變成歌唱派對。使用隨附的 JBL 無線麥克風，您即可獨唱或對唱，或是插入您專屬的麥克風和樂器，展現您的音樂才華。藍牙、USB、AUX 和 TWS (True Wireless Stereo) 連線，提供更多方式讓您存取最喜愛的歌唱應用程式和歌曲，而 100 瓦的強大 JBL 經典音效和令人目眩神迷的燈光秀能讓您享受明星般的體驗。JBL PartyBox On-The-Go 提供鋪墊肩帶、充電式電池、開瓶器和 IPX4 防潑水保護功能，擁有您開派對所需的一切元素，而且可以隨身攜帶。</p>
+                        <h4 class="text-2xl font-semibold mb-4">JBL 經典音效</h4>
+                        <p class="leading-loose mb-8">100 瓦的強大 JBL 經典音效呈現震撼效果，讓您隨處搖擺。無論室內或室外，JBL PartyBox On-The-Go 都能傳送清晰的高音、純淨的中音和重低音，低音增強控制器可以讓美好時光持續一整夜。</p>
+                        <h4 class="text-2xl font-semibold mb-4">與音樂同步的動態燈光秀</h4>
+                        <p class="leading-loose mb-8">會讓賓客目眩神迷的動態燈光，點亮整場派對。提供各種預設模式讓您選擇，當您專注聆聽歌曲時，色彩則會隨著音樂節奏來變換。</p>
+                        <h4 class="text-2xl font-semibold mb-4">隨附 2 支 JBL 無線麥克風</h4>
+                        <p class="leading-loose mb-8">享受無限或無線的歡唱快感。JBL PartyBox On-The-Go 隨附兩支 JBL 無線麥克風，接收範圍長達 10 公尺。</p>
+                        
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg dark:bg-gray-800 hidden" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+                        <h4 class="text-2xl font-semibold mb-4">進階的音效設定，讓您可以調整自己喜愛的歡唱效果</h4>
+                        <p class="leading-loose mb-8">透過藍牙播放歌唱應用程式內的歌曲，接著調整喇叭上面的控制旋鈕：低音、高音和回聲，以獲得最棒的歌唱效果。 JBL PartyBox On-The-Go 提供雙麥克風輸入，您隨時可以與人對唱。</p>
+                        <h4 class="text-2xl font-semibold mb-4">IPX4 防潑水保護</h4>
+                        <p class="leading-loose mb-8">適合海灘狂歡、泳池派對或在雨中搖擺。IPX4 防潑水功能讓您的 JBL PartyBox On-The-Go 獲得保護，即使在派對上碰到潑水的情況也不必擔心。</p>
+                        <h4 class="text-2xl font-semibold mb-4">便利的肩帶可將派對帶著走，整夜不停歇</h4>
+                        <p class="leading-loose mb-8">JBL PartyBox On-The-Go 提供享受美好時光的所有元素，包含連在肩帶上的開瓶器，讓您在整夜隨著節奏擺動的同時，還能暢飲最喜愛的飲品。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer bg-gray-100">
+			<div class="container max-w-7xl px-5 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-wrap lg:flex-nowrap flex-wrap flex-col">
+				<div class="w-full sm:w-full lg:w-96 lg:pr-14 mb-8 md:mb-10 lg:mb-0 flex-shrink-0">
+					<a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+						<img src="img/logo.svg" class="w-12 md:w-14 lg:w-20"> 
+						<div class="ml-5">
+							<h3 class="text-xl font-bold text-2xl">元伸科技(股)公司</h3>
+							<span class="text-sm font-bold">OZCHAMP Technology Co., LTD.</span>
+						</div>
+					</a>
+					<p class="mt-6 text-sm text-gray-500">專業網頁設計公司，提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+					<div class="mt-4 flex gap-2">
+						<a href="#" class="text-3xl text-[#385997] hover:opacity-60 hover:duration-300 hover:ease-in-out"><i class="fab fa-facebook-square"></i></a>
+						<a href="#" class="text-3xl text-[#00aade] hover:opacity-60 hover:duration-300 hover:ease-in-out"><i class="fab fa-twitter-square"></i></a>
+						<a href="#" class="text-3xl text-[#00cf2e] hover:opacity-60 hover:duration-300 hover:ease-in-out"><i class="fab fa-line"></i></a>
+					</div>
+
+				</div>
+				<div class="flex-grow flex flex-wrap text-left sm:w-full">
+					<div class="w-full md:w-4/12 w-full px-4">
+						<h2 class="title-font font-bold text-xl text-gray-900 tracking-widest mb-5">聯絡資訊</h2>
+						<ul class="mb-6">
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">地址: 台灣330桃園市桃園區介壽路 288號 7F</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">電話: +886-3-366-1000</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">傳真: +886-3-366-9292</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">信箱: services@ozchamp.net</a></li>
+						</ul>
+					</div>
+					<div class="w-full md:w-3/12 w-full px-4">
+						<h2 class="title-font font-bold text-xl text-gray-900 tracking-widest mb-5">產品介紹</h2>
+						<ul class="list-disc list-outside mb-6 pl-4">
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+						</ul>
+					</div>
+					<div class="w-full md:w-5/12 w-full px-4">
+						<h2 class="title-font font-bold text-xl text-gray-900 tracking-widest mb-5">Google Map</h2>
+						<div class="bg-white h-28 md:h-40 border rounded overflow-hidden">
+							<iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.533754615572!2d121.30508151474596!3d24.981972983996815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f1fc1a1a51d%3A0x50e12aa85825912a!2z57ay6aCB6Kit6KiIV2ViIERlc2lnbiDlhYPkvLjnp5HmioA!5e0!3m2!1szh-TW!2stw!4v1539073058119"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border-t">
+				<div class="container max-w-7xl mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-center sm:justify-between">
+					<p class="text-gray-500 text-sm text-center sm:text-left">
+						copyright &copy; 2002~2020 元伸科技(股)公司. All rights reserved. Designed by <a href="https://www.ozchamp.com" class="text-gray-600 ml-1" target="_blank">OZCHAMP</a>.
+					</p>
+					<span class="inline-flex sm:mt-0 mt-2 justify-center sm:justify-start text-center sm:text-center">
+						<a href="#" class="text-gray-500 pr-4">元伸簡介</a>
+						<a href="#" class="text-gray-500 pr-4">價值理念</a>
+						<a href="#" class="text-gray-500 pr-4">專業團隊</a>
+						<a href="#" class="text-gray-500">地理位置</a>
+					</span>
+				</div>
+			</div>
+		</footer>
+
+    </div>
+</body>
+</html>

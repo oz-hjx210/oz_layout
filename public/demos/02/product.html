@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keyword" content="">
+
+<base href="">
+
+<meta name="author" content="www.ozchamp.com">
+<meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>DEMO - Product</title>
+<!--Tailwindcss-->
+<script src="https://cdn.tailwindcss.com"></script>
+<!--fontawesome icon-->
+<script src="https://kit.fontawesome.com/9aaa47093c.js" crossorigin="anonymous"></script>
+<!--JS-->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+<!--Custom CSS-->
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+        <!--Header-->
+        <header class="header bg-white">
+	        <div class="container relative mx-auto flex flex-row flex-wrap justify-between items-center w-full h-full" x-data="{ showMenu: false }">
+	            <div class="logo grow p-5">
+	                <a href="/">
+	                    <img src="img/logo.svg" class="w-16 md:w-20 lg:w-22">                   
+	                </a>
+	            </div>
+	            <div class="flex-col hidden w-full sm:w-auto  h-auto p-5 sm:p-1 md:p-2 md:flex" :class="{'flex relative order-3 bg-white': showMenu, 'hidden': !showMenu }">
+					<div class="hidden sm:block mb-4">
+						<ul class="flex flex-row justify-end lg:justify-center lg:items-center text-xs text-gray-400">
+							<li class="pr-4"><a href="tel:+886-3-366-1000 "><i class="fas fa-phone pr-2"></i><span class="hidden lg:inline">+886-3-366-1000</span></a></li>
+							<li class="pr-4"><a href="mailto:services@ozchamp.net"><i class="fas fa-envelope pr-2"></i><span class="hidden lg:inline">services@ozchamp.net</span></a></li>
+							<li class="pr-4"><a href="#" target="_blank"><i class="fas fa-map-marker pr-2"></i><span class="hidden lg:inline">台灣330桃園市桃園區介壽路 288號 7F</span></a></li>
+							<li class="pr-4 relative" x-data="{ open: false }">
+								<div class="cursor-pointer" @click="open = true"><i class="fas fa-globe pr-2"></i>繁体中文 <i class="fas fa-angle-down pl-2"></i></div>
+								<div class="absolute z-50 top-5 left-0 bg-white shadow-xl shadow-gray-500/20 overflow-hidden border border-gray-200" x-show="open" @click.away="open = false">
+									<div class="w-24 divide-y divide-slate-200 text-center">
+										<a class="block p-3" href="#">繁体中文</a>
+										<a class="block p-3" href="#">ENGLISH</a>
+									</div>
+								</div>
+							</li>
+							<li><a href="https://www.facebook.com/webdesign.oz" target="_blank"><i class="fab fa-facebook pr-2"></i></a></li>
+						</ul>
+					</div>
+	                <nav class="flex flex-col justify-center lg:justify-end items-start md:items-center w-full md:flex-row justify-items-stretch sm:justity-center sm:items-center">
+						<ul class="flex w-full flex-col md:w-auto md:flex-row divide-y divide-slate-200 sm:divide-y-0">
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600hover:text-indigo-600" href="index.html">首頁</a></li>
+                            <li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="about.html">關於我們</a></li>
+							<li class="relative" x-data="{ open: false }">
+								<div class="flex justify-between items-center px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600 cursor-pointer" @click="open = true">產品介紹 <i class="fas fa-angle-down pl-2"></i></div>
+								<div class="relatvie sm:absolute sm:z-50 sm:top-auto sm:left-0 bg-gray-100 sm:bg-white sm:shadow-xl sm:shadow-gray-500/20 overflow-hidden sm:border sm:border-gray-200" x-show="open" @click.away="open = false">
+									<div class="w-auto sm:w-32 divide-y divide-slate-200 sm:text-center text-sm">
+										<a class="block p-3" href="product.html">子分類 01</a>
+										<a class="block p-3" href="product.html">子分類 02</a>
+										<a class="block p-3" href="product.html">子分類 03</a>
+										<a class="block p-3" href="product.html">子分類 04</a>
+										<a class="block p-3" href="product.html">子分類 05</a>
+									</div>
+								</div>
+							</li>
+                            <li class="relative" x-data="{ open: false }">
+                                <div class="flex justify-between items-center px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600 cursor-pointer" @click="open = true">新聞中心 <i class="fas fa-angle-down pl-2"></i></div>
+                                <div class="relatvie sm:absolute sm:z-50 sm:top-auto sm:left-0 bg-gray-100 sm:bg-white sm:shadow-xl sm:shadow-gray-500/20 overflow-hidden sm:border sm:border-gray-200" x-show="open" @click.away="open = false">
+                                    <div class="w-auto sm:w-32 divide-y divide-slate-200 sm:text-center text-sm">
+                                        <a class="block p-3" href="news.html">子分類 01</a>
+                                        <a class="block p-3" href="news.html">子分類 02</a>
+                                        <a class="block p-3" href="news.html">子分類 03</a>
+                                        <a class="block p-3" href="news.html">子分類 04</a>
+                                        <a class="block p-3" href="news.html">子分類 05</a>
+                                    </div>
+                                </div>
+                            </li>							
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="contact.html">聯絡我們</a></li>
+						</ul>
+	                </nav>
+	            </div>
+	            <div @click="showMenu = !showMenu" class="block mr-5 bg-gray-200 text-gray-900 hover:bg-indigo-600 hover:text-white cursor-pointer md:hidden rounded">
+	                <span class="flex items-center justify-center w-12 h-12"><i class="fas fa-bars"></i></span>
+	            </div>
+	        </div>
+	    </header>
+
+        <!--Page Banner & Breadcrumb-->
+        <section class="page-banner bg-cover bg-center bg-black" style="background-image: url('img/slider.jpg');">
+            <div class="inner py-16 flex flex-col justity-center bg-black/60 text-center text-white">
+                <div class="banner-heading">
+                    <h1 class="text-5xl font-bold">產品介紹</h1>
+                </div>            
+                <div class="breadcrumb mt-6 text-sm text-white/60">
+                    <a href="#">首頁</a>
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">產品介紹</a>
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">家庭音響</a>
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">家用音響</a>
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">JBL Quantum</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Product List-->
+        <section class="mx-auto max-w-7xl">		
+            <div class="relative w-full py-10 mx-auto">
+                <div class="flex flex-col md:flex-row">
+                    <aside class="w-full md:pr-6 md:w-1/3 lg:w-1/4">
+                        <div class="px-6 py-10 bg-white lg:mr-6 border border-gray-300 md:sticky md:top-0">
+                            <h3 class="text-2xl font-extrabold leading-none text-gray-900">產品介紹</h3>
+                            <ul class="mt-8 divide divide-y">
+                                <li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">無線<i class="fas fa-angle-right text-gray-400"></i></a></li>
+                                <li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">耳機<i class="fas fa-angle-down text-gray-400"></i></a>
+                                    <ul class="list-disc list-outside mb-6 pl-5">
+                                        <li><a href="#">頭戴式 & 耳掛式耳機</a></li>
+                                        <li><a href="#">入耳式耳機</a></li>
+                                        <li><a href="#">無線耳機</a></li>
+                                        <li><a href="#">運動耳機</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="py-3 font-bold text-indigo-600 flex justify-between items-center">家庭音響<i class="fas fa-angle-right text-gray-400"></i></a>
+                                    <ul class="list-disc list-outside mb-6 pl-5">
+                                        <li><a href="#" class="text-indigo-600">家用音響</a></li>
+                                        <li><a href="#">條形音響</a></li>
+                                        <li><a href="#">音響</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">JBL Quantum 系列<i class="fas fa-angle-right text-gray-400"></i></a></li>
+                                <li><a href="#" class="py-3 font-bold hover:text-indigo-600 flex justify-between items-center">車用/航海<i class="fas fa-angle-right text-gray-400"></i></a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <div class="w-full md:w-2/3 lg:w-3/4 grid md:grid-cols-2 lg:grid-cols-1 gap-6">
+                        <div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+                                <img class="w-full shadow-sm h-auto" src="img/lineup-quantum-100.webp">
+                            </a>
+                            <div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+                                <div class="prod-name">
+                                    <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 100</a></h2>
+                                    <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                                </div>
+                                <div class="prod-desc text-sm mt-6">
+                                    <p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+                                </div>
+                                <a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+                                <img class="w-full shadow-sm h-auto" src="img/lineup-quantum-200.webp">
+                            </a>
+                            <div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+                                <div class="prod-name">
+                                    <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 200</a></h2>
+                                    <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                                </div>
+                                <div class="prod-desc text-sm mt-6">
+                                    <p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+                                </div>
+                                <a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+                                <img class="w-full shadow-sm h-auto" src="img/lineup-quantum-300.webp">
+                            </a>
+                            <div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+                                <div class="prod-name">
+                                    <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 300</a></h2>
+                                    <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                                </div>
+                                <div class="prod-desc text-sm mt-6">
+                                    <p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+                                </div>
+                                <a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+                                <img class="w-full shadow-sm h-auto" src="img/lineup-quantum-400.webp">
+                            </a>
+                            <div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+                                <div class="prod-name">
+                                    <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 400</a></h2>
+                                    <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                                </div>
+                                <div class="prod-desc text-sm mt-6">
+                                    <p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+                                </div>
+                                <a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+                                <img class="w-full shadow-sm h-auto" src="img/lineup-quantum-600.webp">
+                            </a>
+                            <div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+                                <div class="prod-name">
+                                    <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 600</a></h2>
+                                    <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                                </div>
+                                <div class="prod-desc text-sm mt-6">
+                                    <p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+                                </div>
+                                <a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+                                <img class="w-full shadow-sm h-auto" src="img/lineup-quantum-800.webp">
+                            </a>
+                            <div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+                                <div class="prod-name">
+                                    <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum 800</a></h2>
+                                    <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                                </div>
+                                <div class="prod-desc text-sm mt-6">
+                                    <p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+                                </div>
+                                <a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+                                <img class="w-full shadow-sm h-auto" src="img/lineup-quantum-one.webp">
+                            </a>
+                            <div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+                                <div class="prod-name">
+                                    <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum ONE</a></h2>
+                                    <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                                </div>
+                                <div class="prod-desc text-sm mt-6">
+                                    <p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+                                </div>
+                                <a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col lg:flex-row items-stretch overflow-hidden shadow-sm bg-white border border-gray-300">
+                            <a href="#" class="block p-6 w-full lg:w-1/4 transition duration-200 ease-out transform hover:opacity-50">
+                                <img class="w-full shadow-sm h-auto" src="img/lineup-quantum-speakers.webp">
+                            </a>
+                            <div class="relative flex flex-col lg:w-3/4 justify-between items-stretch p-6">
+                                <div class="prod-name">
+                                    <h2 class="text-base font-bold sm:text-lg md:text-xl hover:text-indigo-600"><a href="#">JBL Quantum DUO</a></h2>
+                                    <div class="mt-2 text-xs text-gray-400">JBL Quantum Series</div>
+                                </div>
+                                <div class="prod-desc text-sm mt-6">
+                                    <p>通过 JBL Quantum 游戏耳机，掌握不同凡响的竞技优势。经过多年的研究，我们将工程严密的耳机与定制的尖端软件相结合，让您不错过任何精彩。拥有高清还原、身临其境的声音体验，让您如临世界之巅，将世间微妙之音尽收耳中。</p>
+                                </div>
+                                <a href="#" class="items-center mt-6 text-indigo-600 hover:text-orange-400">瞭解更多 <i class="fas fa-angle-right ml-2"></i></a>
+                            </div>
+                        </div>
+
+                        <!--Pagination-->
+                        <div class="flex flex-col items-center mb-8 px-4 mx-auto mt-8">
+                            <div class="font-sans flex justify-end space-x-1 select-none">
+                                <a href="#" class="flex items-center px-4 py-2 text-gray-500 bg-gray-300 rounded-md"><i class="fa fa-angle-left"></i></i></a>
+                                <a href="#" class="px-4 py-2 text-white bg-indigo-600 rounded-md hover:bg-indigo-600 hover:text-white">1</a>
+                                <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-indigo-600 hover:text-white">2</a>
+                                <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-indigo-600 hover:text-white">3</a>
+                                <span class="px-4 py-2 text-gray-700  rounded-md" >...</span>
+                                <a href="#" class="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-indigo-600 hover:text-white">10</a>
+                                <a href="#" class="px-4 py-2 font-bold text-gray-500 bg-gray-300 rounded-md hover:bg-indigo-600 hover:text-white"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </section>
+
+        <!--Footer-->
+        <footer class="footer bg-gray-100">
+			<div class="container max-w-7xl px-5 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-wrap lg:flex-nowrap flex-wrap flex-col">
+				<div class="w-full sm:w-full lg:w-96 lg:pr-14 mb-8 md:mb-10 lg:mb-0 flex-shrink-0">
+					<a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+						<img src="img/logo.svg" class="w-12 md:w-14 lg:w-20"> 
+						<div class="ml-5">
+							<h3 class="text-xl font-bold text-2xl">元伸科技(股)公司</h3>
+							<span class="text-sm font-bold">OZCHAMP Technology Co., LTD.</span>
+						</div>
+					</a>
+					<p class="mt-6 text-sm text-gray-500">專業網頁設計公司，提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+					<div class="mt-4 flex gap-2">
+						<a href="#" class="text-3xl text-[#385997] hover:opacity-60 hover:duration-300 hover:ease-in-out"><i class="fab fa-facebook-square"></i></a>
+						<a href="#" class="text-3xl text-[#00aade] hover:opacity-60 hover:duration-300 hover:ease-in-out"><i class="fab fa-twitter-square"></i></a>
+						<a href="#" class="text-3xl text-[#00cf2e] hover:opacity-60 hover:duration-300 hover:ease-in-out"><i class="fab fa-line"></i></a>
+					</div>
+
+				</div>
+				<div class="flex-grow flex flex-wrap text-left sm:w-full">
+					<div class="w-full md:w-4/12 w-full px-4">
+						<h2 class="title-font font-bold text-xl text-gray-900 tracking-widest mb-5">聯絡資訊</h2>
+						<ul class="mb-6">
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">地址: 台灣330桃園市桃園區介壽路 288號 7F</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">電話: +886-3-366-1000</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">傳真: +886-3-366-9292</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">信箱: services@ozchamp.net</a></li>
+						</ul>
+					</div>
+					<div class="w-full md:w-3/12 w-full px-4">
+						<h2 class="title-font font-bold text-xl text-gray-900 tracking-widest mb-5">產品介紹</h2>
+						<ul class="list-disc list-outside mb-6 pl-4">
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+						</ul>
+					</div>
+					<div class="w-full md:w-5/12 w-full px-4">
+						<h2 class="title-font font-bold text-xl text-gray-900 tracking-widest mb-5">Google Map</h2>
+						<div class="bg-white h-28 md:h-40 border rounded overflow-hidden">
+							<iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.533754615572!2d121.30508151474596!3d24.981972983996815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f1fc1a1a51d%3A0x50e12aa85825912a!2z57ay6aCB6Kit6KiIV2ViIERlc2lnbiDlhYPkvLjnp5HmioA!5e0!3m2!1szh-TW!2stw!4v1539073058119"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border-t">
+				<div class="container max-w-7xl mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-center sm:justify-between">
+					<p class="text-gray-500 text-sm text-center sm:text-left">
+						copyright &copy; 2002~2020 元伸科技(股)公司. All rights reserved. Designed by <a href="https://www.ozchamp.com" class="text-gray-600 ml-1" target="_blank">OZCHAMP</a>.
+					</p>
+					<span class="inline-flex sm:mt-0 mt-2 justify-center sm:justify-start text-center sm:text-center">
+						<a href="#" class="text-gray-500 pr-4">元伸簡介</a>
+						<a href="#" class="text-gray-500 pr-4">價值理念</a>
+						<a href="#" class="text-gray-500 pr-4">專業團隊</a>
+						<a href="#" class="text-gray-500">地理位置</a>
+					</span>
+				</div>
+			</div>
+		</footer>
+
+    </div>
+</body>
+</html>

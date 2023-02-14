@@ -1,0 +1,68 @@
+html, body { margin: 0; padding: 0; width: 100%; min-height: 100%; height: 100%; font-size: 62.5%; font-family: "Noto Sans TC", Arial, Helvetica, sans-serif; }
+body { background: #f3f3f9; }
+a { text-decoration: none; transition: .3s; }
+section { position: relative; padding: 4rem 10vw; }
+aside { position: relative; width: 100%; }
+article { position: relative; }
+article .image { border: 1px solid #00000015; border-radius: 1rem; box-shadow: 0 4rem 4rem -3rem rgba(0,0,0,0.15); overflow: hidden; }
+article .image img { display: block; outline: none; }
+iframe { width: 100%; height: 100%; border: 0; }
+h1,h2,h3,h4,h5,h6,p { margin: 0; padding: 0; }
+
+nav { display: flex; justify-content: space-between; width: 100%; background: #282626;  }
+nav ul,
+nav ul li { margin: 0; padding: 0; list-style: none;}
+nav ul { display: inline-flex; justify-content: center; padding: 1rem 1rem 0; height: 100%; }
+nav ul li a { display: block; position: relative; padding: 1rem 2rem; font-size: 1.8rem; color: #fff; font-weight: bold; white-space: nowrap; }
+nav ul li a:hover, nav ul li a:focus { background: #3e3c3c;}
+nav ul li a.active { background: #fff; color: #282626; }
+nav ul li a small { display: block; font-weight: normal; font-size: 1.2rem; text-transform: uppercase; opacity: .65;}
+
+nav .account { display: flex; align-items: center; padding: 1rem 2rem; background-color: #3e3c3c;}
+nav .account a { color: white; font-size: 2rem; }
+nav .account a .fas { display: block; min-width: 2rem; }
+
+section figure { margin: 0; padding: 10rem 6rem; min-height: calc(100vh - 20rem); }
+section figure:nth-child(even) { background-color: #f3f4f4;}
+section figure:last-child { padding: 6rem; min-height: unset; text-align: center; }
+section .items { display: grid; grid-gap: 3rem; grid-template-rows: auto; grid-template-columns: 1fr; max-width: 1200px; margin: 0 auto; }
+section .items:not(:first-child) { margin-bottom: 5rem; }
+section h1 { margin-bottom: 3rem; font-size: 3.6rem; font-weight: 700;}
+section p { font-size: 1.4rem; color: #64748b; }
+section p small { padding: 0 .5rem;}
+
+/*
+.radio { position: relative;}
+.radio.inline { display: inline-block;}
+.radio label { position: relative; padding-left: 3rem; font-size: 1.6rem; font-weight: bold; line-height: 2rem; cursor: pointer; }
+.radio label:before, .radio label:after { display: block; content: ""; position: absolute; border-radius: 100%; transform: translateY(-50%); transition: .3s;}
+.radio label:before { z-index: 1; left: 0; top: 50%; width: 2rem; height: 2rem; background: #e7ecef; box-shadow: inset 0 0 .2rem #00000035; }
+.radio label:after { z-index: 2; left: .4rem; top: 50%; width: 1.2rem; height: 1.2rem; background: transparent; }
+.radio input[type="radio"]:checked + label:before { background: #405189;}
+.radio input[type="radio"]:checked + label:after { background: #fff;}
+.radio input[type="radio"] { position: absolute; width: 100%; height: 100%; appearance: none;}
+*/
+
+.radio.custom { display: block; position: relative;}
+.radio.custom label { display: flex; flex-direction: column;}
+.radio.custom label:before, .radio.custom label:after { display: none;}
+.radio.custom .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.radio.custom .top .code { padding: 0 1rem; font-size: 2rem; font-family: 'Merriweather', serif; font-weight: 700; }
+.radio.custom .top .btns a { padding: 1rem; color: #D1D5DB;}
+.radio.custom .top .btns a:hover, .radio.custom .top .btns a:active { color: #405189;}
+.radio.custom input[type="radio"] { position: absolute; appearance: none; }
+.radio.custom input[type="radio"]:checked + label { box-shadow: 0 2rem 4rem -2rem #40518966;}
+.radio.custom .bottom { display: flex; justify-content: center; align-items: center; border-radius: .4rem; border: 1px solid #e5e7eb; border-radius: 1rem; cursor: pointer; }
+.radio.custom .bottom .img-fluid { vertical-align: middle; border-radius: 1rem; }
+.radio.custom input[type="radio"]:checked + label .bottom { border-color: #3577f1; box-shadow: 0 0 0 2px #3577f1; }
+
+.img-fluid { display: block; max-width: 100%; max-height: 100%;}
+
+.btn { display: inline-block; padding: 1rem 3rem; font-size: 2rem; background: transparent; color: #282626; border: 1px solid #282626; }
+.btn:hover, .btn:focus { background: #282626; color: white; }
+
+.wrapper h1 { color: #000; } 
+.wrapper h2 { color: #838fb9; font-weight: normal; }
+
+.goBack { position: fixed; right: 0; bottom: 0; background: #405189; padding: 1rem 2rem; color: #fff; font-size: 1.6rem; border-radius: 1rem 1rem 0 0; }
+.goBack .fas { margin-right: .6rem; }

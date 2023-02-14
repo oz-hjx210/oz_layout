@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keyword" content="">
+
+<base href="">
+
+<meta name="author" content="www.ozchamp.com">
+<meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>區塊總覽-大圖輪播</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+<!--CSS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/9aaa47093c.js" crossorigin="anonymous"></script>
+
+<!--swiper-->
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+<style type="text/css">
+:root {
+	--swiper-navigation-color: white !important;
+	--swiper-theme-color: white !important;	
+}
+::-webkit-scrollbar { width: 6px; height: 6px; border-radius: 3px;}
+::-webkit-scrollbar-thumb { border-radius: 3px; background: #333; }
+::-webkit-scrollbar-thumb:hover { background: #ff6d34; }
+input[type="radio"] { width: 1.2rem; height: 1.2rem; background: white; vertical-align: middle; }
+label { display: inline-block; font-weight: bold; line-height: 1.2rem; cursor: pointer;}
+</style>
+</head>
+
+<body class="bg-slate-300 p-4 sm:p-5 md:px-20 md:pt-12 md:pb-20">
+
+	<h3 class="text-3xl mb-6 font-black text-center">形象大圖</h3>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" class="p-3 bg-orange-500 text-white rounded" for="BS01">
+			<!--<input name="header-ele" type="radio" id="BS01">-->
+			BS 01
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">
+		<div id="default-carousel" class="relative mt-3 mb-12 bg-white shadow-xl" data-carousel="static">
+	        <div class="overflow-hidden relative h-32 md:h-64 lg:h-96">
+	            <div class="hidden duration-700 ease-in-out bg-gradient-to-bl from-indigo-600 to-blue-500" data-carousel-item>
+	                <div class="absolute z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+	                	<h2 class="text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">比一般RWD 更超值服務</h2>
+						<p class="hidden lg:block text-white text-sm mt-4 mb-12">提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+						<a href="#" class="hidden md:inline-block border-2 border-white-500 rounded-md text-xs sm:text-sm md:text-md font-bold text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">Read More</a>
+	                </div>
+	            </div>
+	            <div class="hidden duration-700 ease-in-out bg-black" data-carousel-item>
+	                <div class="absolute z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+	                	<h2 class="text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">比一般RWD 更超值服務</h2>
+						<p class="hidden lg:block text-white text-sm mt-4 mb-12">提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+						<a href="#" class="hidden md:inline-block border-2 border-white-500 rounded-md text-xs sm:text-sm md:text-md font-bold text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">Read More</a>
+	                </div>
+	                <img src="img/slider.jpg" class="block opacity-60 absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+	            </div>
+	            <div class="hidden duration-700 ease-in-out bg-gradient-to-bl from-indigo-600 to-blue-500" data-carousel-item>
+	                <div class="absolute z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+	                	<h2 class="text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">比一般RWD 更超值服務</h2>
+						<p class="hidden lg:block text-white text-sm mt-4 mb-12">提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+						<a href="#" class="hidden md:inline-block border-2 border-white-500 rounded-md text-xs sm:text-sm md:text-md font-bold text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">Read More</a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+	            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+	            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+	            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+	        </div>
+	        <!-- Slider controls -->
+	        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+	            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+	                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+	                <span class="hidden">Previous</span>
+	            </span>
+	        </button>
+	        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+	            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+	                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+	                <span class="hidden">Next</span>
+	            </span>
+	        </button>
+	    </div>
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="BS02">
+			<!--<input name="header-ele" type="radio" id="BS02">-->
+			BS 02
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">
+		<div id="default-carousel" class="relative mt-3 mb-12 bg-white shadow-xl" data-carousel="static">
+			<div id="svg-clip" class="absolute z-30 left-0 top-0 right-0">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680.31 17.01" class="w-full fill-slate-300"><path d="M0,0V17S95.47.61,340.16.61,680.31,17,680.31,17V0Z"/></svg>
+			</div>
+	        <div class="overflow-hidden relative h-32 md:h-64 lg:h-96">
+	            <div class="hidden duration-700 ease-in-out bg-gradient-to-t from-indigo-600 to-pink-500" data-carousel-item>
+	                <div class="absolute z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+	                	<h2 class="text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">比一般RWD 更超值服務</h2>
+						<p class="hidden lg:block text-white text-sm mt-4 mb-12">提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+	                </div>
+	            </div>
+	            <div class="hidden duration-700 ease-in-out bg-gradient-to-t from-indigo-600 to-pink-500" data-carousel-item>
+	                <div class="absolute z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+	                	<h2 class="text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">比一般RWD 更超值服務</h2>
+						<p class="hidden lg:block text-white text-sm mt-4 mb-12">提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+	                </div>
+	            </div>
+				<div class="hidden duration-700 ease-in-out bg-gradient-to-t from-indigo-600 to-pink-500" data-carousel-item>
+	                <div class="absolute z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+	                	<h2 class="text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">比一般RWD 更超值服務</h2>
+						<p class="hidden lg:block text-white text-sm mt-4 mb-12">提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+	            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+	            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+	            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="1"></button>
+	        </div>
+	    </div>
+	</section>
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 bg-orange-500 text-white rounded" for="BS03">
+			<!--<input name="header-ele" type="radio" id="BS03">-->
+			BS 03
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">
+		<div id="default-carousel" class="relative mt-3 mb-12 bg-white shadow-xl" data-carousel="static">
+	        <div class="overflow-hidden relative h-20 md:h-64 lg:h-96">
+	            <div class="hidden duration-700 ease-in-out bg-cover" style="background-image: url(img/slider-bg.jpg);" data-carousel-item>
+	                <div class="flex flex-row items-center">
+						<div class="order-2 pl-4 pr-4 sm:pl-10 sm:pr-12 lg:pl-20 lg:pr-24 w-2/3 md:w-1/2">
+							<h2 class="text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">比一般RWD 更超值服務</h2>
+							<p class="hidden lg:block text-white text-sm mt-4 mb-12">提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+							<a href="#" class="hidden md:inline-block border-2 border-white-500 rounded-md text-xs sm:text-sm md:text-md font-bold text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">Read More</a>
+						</div>
+						<img src="img/slider-clip.png" class="order-1 w-1/3 md:w-1/2">
+					</div>
+	            </div>
+	            <div class="hidden duration-700 ease-in-out bg-cover" style="background-image: url(img/slider-bg.jpg);" data-carousel-item>
+	                <div class="flex flex-row items-center">
+						<div class="order-2 pl-4 pr-4 sm:pl-10 sm:pr-12 lg:pl-20 lg:pr-24 w-2/3 md:w-1/2">
+							<h2 class="text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">比一般RWD 更超值服務</h2>
+							<p class="hidden lg:block text-white text-sm mt-4 mb-12">提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+							<a href="#" class="hidden md:inline-block border-2 border-white-500 rounded-md text-xs sm:text-sm md:text-md font-bold text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">Read More</a>
+						</div>
+						<img src="img/slider-clip.png" class="order-1 w-1/3 md:w-1/2">
+					</div>
+	            </div>
+	            <div class="hidden duration-700 ease-in-out bg-cover" style="background-image: url(img/slider-bg.jpg);" data-carousel-item>
+	                <div class="flex flex-row items-center">
+						<div class="order-2 pl-4 pr-4 sm:pl-10 sm:pr-12 lg:pl-20 lg:pr-24 w-2/3 md:w-1/2">
+							<h2 class="text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">比一般RWD 更超值服務</h2>
+							<p class="hidden lg:block text-white text-sm mt-4 mb-12">提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+							<a href="#" class="hidden md:inline-block border-2 border-white-500 rounded-md text-xs sm:text-sm md:text-md font-bold text-white px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">Read More</a>
+						</div>
+						<img src="img/slider-clip.png" class="order-1 w-1/3 md:w-1/2">
+					</div>
+	            </div>
+	        </div>
+	        <!-- Slider controls -->
+	        <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+	            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+	                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+	                <span class="hidden">Previous</span>
+	            </span>
+	        </button>
+	        <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+	            <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+	                <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+	                <span class="hidden">Next</span>
+	            </span>
+	        </button>
+	    </div>
+	</section>
+
+
+	<h4 class="mx-auto max-w-7xl text-lg">
+		<label class="p-3 mb-3 bg-orange-500 text-white rounded" for="BS04">
+			<!--<input name="header-ele" type="radio" id="BS04">-->
+			BS 04
+		</label>
+	</h4>
+	<section class="mx-auto max-w-7xl">
+		<div class="swipe mySwiper mt-3 mb-12 relative bg-white shadow-xl w-full max-h-96">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide bg-center bg-cover h-96 flex justify-center" style="background-image: url('img/slider-1.jpg');">
+					<div class="inline-flex flex-col justify-center items-center h-full w-full bg-black/60 text-center">
+						<h2 class="lg:w-1/2 uppercase text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0"><span class="text-yellow-300">Creativity</span> is the way of seeing things.</h2>
+						<a href="#" class="hidden md:inline-block border-2 border-white-500 text-xs sm:text-sm md:text-md font-bold text-white mt-12 px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">Read More</a>
+					</div>
+				</div>
+				<div class="swiper-slide bg-center bg-cover h-96 flex justify-center" style="background-image: url('img/slider-2.jpg');">
+					<div class="inline-flex flex-col justify-center items-center h-full w-full bg-black/60 text-center">
+						<h2 class="lg:w-1/2 uppercase text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0"><span class="text-yellow-300">Inspiration</span> is only the first step.</h2>
+						<a href="#" class="hidden md:inline-block border-2 border-white-500 text-xs sm:text-sm md:text-md font-bold text-white mt-12 px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">Read More</a>
+					</div>
+				</div>
+				<div class="swiper-slide bg-center bg-cover h-96 flex justify-center" style="background-image: url('img/slider-3.jpg');">
+					<div class="inline-flex flex-col justify-center items-center h-full w-full bg-black/60 text-center">
+						<h2 class="lg:w-1/2 uppercase text-lg sm:text-2xl lg:text-5xl font-semibold text-white mb-4 sm:mb-6 lg:mb-0">Creative <span class="text-yellow-300">thinking</span> & <span class="text-yellow-300">design</span>.</h2>
+						<a href="#" class="hidden md:inline-block border-2 border-white-500 text-xs sm:text-sm md:text-md font-bold text-white mt-12 px-4 py-2 transition duration-300 ease-in-out hover:bg-white hover:text-indigo-600">Read More</a>
+					</div>
+				</div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		  
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		 <script>
+			var swiper = new Swiper(".mySwiper", {
+			spaceBetween: 30,
+			effect: "fade",
+			autoplay: {
+	        	delay: 3000,
+	        	disableOnInteraction: false,
+        		},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+				},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+				},
+			});
+		</script>
+	</section>
+</body>
+</html>

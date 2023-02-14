@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keyword" content="">
+
+<base href="">
+
+<meta name="author" content="www.ozchamp.com">
+<meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>DEMO - About</title>
+<!--Tailwindcss-->
+<script src="https://cdn.tailwindcss.com"></script>
+<!--fontawesome icon-->
+<script src="https://kit.fontawesome.com/9aaa47093c.js" crossorigin="anonymous"></script>
+<!--JS-->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+<!--Custom CSS-->
+<style type="text/css">
+
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+        <!--Header-->
+        <header class="header bg-white">
+	        <div class="container relative mx-auto flex flex-row flex-wrap justify-between items-center w-full h-full" x-data="{ showMenu: false }">
+	            <div class="logo grow p-5">
+	                <a href="/">
+	                    <img src="img/logo.svg" class="w-16 md:w-20 lg:w-22">                   
+	                </a>
+	            </div>
+	            <div class="flex-col hidden w-full sm:w-auto  h-auto p-5 sm:p-1 md:p-2 md:flex" :class="{'flex relative order-3 bg-white': showMenu, 'hidden': !showMenu }">
+					<div class="hidden sm:block mb-4">
+						<ul class="flex flex-row justify-end lg:justify-center lg:items-center text-xs text-gray-400">
+							<li class="pr-4"><a href="tel:+886-3-366-1000 "><i class="fas fa-phone pr-2"></i><span class="hidden lg:inline">+886-3-366-1000</span></a></li>
+							<li class="pr-4"><a href="mailto:services@ozchamp.net"><i class="fas fa-envelope pr-2"></i><span class="hidden lg:inline">services@ozchamp.net</span></a></li>
+							<li class="pr-4"><a href="#" target="_blank"><i class="fas fa-map-marker pr-2"></i><span class="hidden lg:inline">台灣330桃園市桃園區介壽路 288號 7F</span></a></li>
+							<li class="pr-4 relative" x-data="{ open: false }">
+								<div class="cursor-pointer" @click="open = true"><i class="fas fa-globe pr-2"></i>繁体中文 <i class="fas fa-angle-down pl-2"></i></div>
+								<div class="absolute z-50 top-5 left-0 bg-white shadow-xl shadow-gray-500/20 overflow-hidden border border-gray-200" x-show="open" @click.away="open = false">
+									<div class="w-24 divide-y divide-slate-200 text-center">
+										<a class="block p-3" href="#">繁体中文</a>
+										<a class="block p-3" href="#">ENGLISH</a>
+									</div>
+								</div>
+							</li>
+							<li><a href="https://www.facebook.com/webdesign.oz" target="_blank"><i class="fab fa-facebook pr-2"></i></a></li>
+						</ul>
+					</div>
+	                <nav class="flex flex-col justify-center lg:justify-end items-start md:items-center w-full md:flex-row justify-items-stretch sm:justity-center sm:items-center">
+						<ul class="flex w-full flex-col md:w-auto md:flex-row divide-y divide-slate-200 sm:divide-y-0">
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600hover:text-indigo-600" href="index.html">首頁</a></li>
+                            <li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="about.html">關於我們</a></li>
+							<li class="relative" x-data="{ open: false }">
+								<div class="flex justify-between items-center px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600 cursor-pointer" @click="open = true">產品介紹 <i class="fas fa-angle-down pl-2"></i></div>
+								<div class="relatvie sm:absolute sm:z-50 sm:top-auto sm:left-0 bg-gray-100 sm:bg-white sm:shadow-xl sm:shadow-gray-500/20 overflow-hidden sm:border sm:border-gray-200" x-show="open" @click.away="open = false">
+									<div class="w-auto sm:w-32 divide-y divide-slate-200 sm:text-center text-sm">
+										<a class="block p-3" href="product.html">子分類 01</a>
+										<a class="block p-3" href="product.html">子分類 02</a>
+										<a class="block p-3" href="product.html">子分類 03</a>
+										<a class="block p-3" href="product.html">子分類 04</a>
+										<a class="block p-3" href="product.html">子分類 05</a>
+									</div>
+								</div>
+							</li>
+                            <li class="relative" x-data="{ open: false }">
+                                <div class="flex justify-between items-center px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600 cursor-pointer" @click="open = true">新聞中心 <i class="fas fa-angle-down pl-2"></i></div>
+                                <div class="relatvie sm:absolute sm:z-50 sm:top-auto sm:left-0 bg-gray-100 sm:bg-white sm:shadow-xl sm:shadow-gray-500/20 overflow-hidden sm:border sm:border-gray-200" x-show="open" @click.away="open = false">
+                                    <div class="w-auto sm:w-32 divide-y divide-slate-200 sm:text-center text-sm">
+                                        <a class="block p-3" href="news.html">子分類 01</a>
+                                        <a class="block p-3" href="news.html">子分類 02</a>
+                                        <a class="block p-3" href="news.html">子分類 03</a>
+                                        <a class="block p-3" href="news.html">子分類 04</a>
+                                        <a class="block p-3" href="news.html">子分類 05</a>
+                                    </div>
+                                </div>
+                            </li>
+							<li><a class="block px-2 py-2 lg:px-5 lg:py-3 font-bold text-gray-600 hover:text-indigo-600" href="contact.html">聯絡我們</a></li>
+						</ul>
+	                </nav>
+	            </div>
+	            <div @click="showMenu = !showMenu" class="block mr-5 bg-gray-200 text-gray-900 hover:bg-indigo-600 hover:text-white cursor-pointer md:hidden rounded">
+	                <span class="flex items-center justify-center w-12 h-12"><i class="fas fa-bars"></i></span>
+	            </div>
+	        </div>
+	    </header>
+
+        <!--Page Banner & Breadcrumb-->
+        <section class="page-banner bg-cover bg-center bg-black" style="background-image: url('img/slider.jpg');">
+            <div class="inner py-16 flex flex-col justity-center bg-black/60 text-center text-white">
+                <div class="banner-heading">
+                    <h1 class="text-5xl font-bold">關於我們</h1>
+                </div>            
+                <div class="breadcrumb mt-6 text-sm text-white/60">
+                    <a href="#">首頁</a>
+                    <span class="mx-2"><i class="fas fa-angle-right"></i></span>
+                    <a href="#">關於我們</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Product List-->
+        <section class="page-about">		
+            <div class="container max-w-7xl mx-auto py-12">
+                <div class="fck-box">
+                    <h2 class="text-3xl font-bold mb-3">元伸科技-網頁設計公司</h2>
+                    <p class="mb-3">成立於 2002年元月。為一專業之網頁設計公司提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務公司。</p>
+                    <p class="mb-3">致力於為廣大中小企業提供解決方案；以客戶角度出發並堅持客戶至上、細心服務為準則，集結多元且專業領域的網頁設計公司團隊，更能提供您客製化網頁設計的服務，為您提供專業的網站設計方案。</p>
+
+                    <h2 class="text-3xl font-bold mb-3 mt-6">網頁設計理念</h2>
+                    <p class="mb-3">在網際網路各種媒體資訊爆炸的今天，如何開拓您產品或服務路線的商機？您需要專業網站規劃人才為您的品牌形象重新包裝。光是建置好一個網站，若瀏覽者找不到您，將會無形中流失潛在客戶並浪費網站建置成本。能夠留住瀏覽者的第一眼，才有機會掌握他的下一步。再經由網站提供的有用資訊，轉換瀏覽者成為您的客戶。</p>
+                    <p class="mb-3">元伸網頁設計公司團隊相信一個有價值的網站，至少要符合三個主要目標：</p>
+                    <ul class="mb-3">
+                        <li>讓潛在客戶，在網路上，很容易找到您的網站。</li>
+                        <li>讓潛在客戶，在您的網站，很容易找到所需的資訊。</li>
+                        <li>讓潛在客戶，變成您長期的客戶。</li>
+                    </ul>
+                    <p class="mb-3">元伸網頁設計公司團隊秉持在網際網路服務多年的經驗，更能協助企業網站貼近您的客戶需求，將貴公司的產品與服務透過合宜的客制化視覺設計及功能設計，加上網路無國界的拓展，讓您的網路行銷更能有效。</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer bg-gray-100">
+			<div class="container max-w-7xl px-5 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-wrap lg:flex-nowrap flex-wrap flex-col">
+				<div class="w-full sm:w-full lg:w-96 lg:pr-14 mb-8 md:mb-10 lg:mb-0 flex-shrink-0">
+					<a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+						<img src="img/logo.svg" class="w-12 md:w-14 lg:w-20"> 
+						<div class="ml-5">
+							<h3 class="text-xl font-bold text-2xl">元伸科技(股)公司</h3>
+							<span class="text-sm font-bold">OZCHAMP Technology Co., LTD.</span>
+						</div>
+					</a>
+					<p class="mt-6 text-sm text-gray-500">專業網頁設計公司，提供整體網站規劃、網站設計、網頁設計、程式設計、網頁製作、網路行銷、網站代管以及相關之網頁設計加值服務。</p>
+					<div class="mt-4 flex gap-2">
+						<a href="#" class="text-3xl text-[#385997] hover:opacity-60 hover:duration-300 hover:ease-in-out"><i class="fab fa-facebook-square"></i></a>
+						<a href="#" class="text-3xl text-[#00aade] hover:opacity-60 hover:duration-300 hover:ease-in-out"><i class="fab fa-twitter-square"></i></a>
+						<a href="#" class="text-3xl text-[#00cf2e] hover:opacity-60 hover:duration-300 hover:ease-in-out"><i class="fab fa-line"></i></a>
+					</div>
+
+				</div>
+				<div class="flex-grow flex flex-wrap text-left sm:w-full">
+					<div class="w-full md:w-4/12 w-full px-4">
+						<h2 class="title-font font-bold text-xl text-gray-900 tracking-widest mb-5">聯絡資訊</h2>
+						<ul class="mb-6">
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">地址: 台灣330桃園市桃園區介壽路 288號 7F</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">電話: +886-3-366-1000</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">傳真: +886-3-366-9292</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">信箱: services@ozchamp.net</a></li>
+						</ul>
+					</div>
+					<div class="w-full md:w-3/12 w-full px-4">
+						<h2 class="title-font font-bold text-xl text-gray-900 tracking-widest mb-5">產品介紹</h2>
+						<ul class="list-disc list-outside mb-6 pl-4">
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+							<li><a href="#" class="block leading-loose text-sm text-black hover:text-indigo-600">產品分類</a></li>
+						</ul>
+					</div>
+					<div class="w-full md:w-5/12 w-full px-4">
+						<h2 class="title-font font-bold text-xl text-gray-900 tracking-widest mb-5">Google Map</h2>
+						<div class="bg-white h-28 md:h-40 border rounded overflow-hidden">
+							<iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.533754615572!2d121.30508151474596!3d24.981972983996815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f1fc1a1a51d%3A0x50e12aa85825912a!2z57ay6aCB6Kit6KiIV2ViIERlc2lnbiDlhYPkvLjnp5HmioA!5e0!3m2!1szh-TW!2stw!4v1539073058119"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="border-t">
+				<div class="container max-w-7xl mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row justify-center sm:justify-between">
+					<p class="text-gray-500 text-sm text-center sm:text-left">
+						copyright &copy; 2002~2020 元伸科技(股)公司. All rights reserved. Designed by <a href="https://www.ozchamp.com" class="text-gray-600 ml-1" target="_blank">OZCHAMP</a>.
+					</p>
+					<span class="inline-flex sm:mt-0 mt-2 justify-center sm:justify-start text-center sm:text-center">
+						<a href="#" class="text-gray-500 pr-4">元伸簡介</a>
+						<a href="#" class="text-gray-500 pr-4">價值理念</a>
+						<a href="#" class="text-gray-500 pr-4">專業團隊</a>
+						<a href="#" class="text-gray-500">地理位置</a>
+					</span>
+				</div>
+			</div>
+		</footer>
+    </div>
+</body>
+</body>
+</html>
